@@ -1,27 +1,27 @@
 export const topSkills = [
-  { name: 'Product Strategy', rating: 5 },
-  { name: 'Agile / Scrum', rating: 4 },
-  { name: 'Data Analysis', rating: 4 },
-  { name: 'Stakeholder Management', rating: 5 },
-  { name: 'User Research', rating: 4 },
+  { id: 'productStrategy', rating: 5 },
+  { id: 'agileScrum', rating: 4 },
+  { id: 'dataAnalysis', rating: 4 },
+  { id: 'stakeholderManagement', rating: 5 },
+  { id: 'userResearch', rating: 4 },
 ]
 
-export const otherSkills = [
-  'Roadmap Planning',
-  'A/B Testing',
-  'SQL',
-  'Jira & Confluence',
-  'Figma',
-  'Wireframing',
-  'Market Analysis',
-  'OKRs & KPIs',
-  'API Design',
-  'Business Modeling',
-  'Presentation Design',
-  'Cross-functional Leadership',
+export const otherSkillIds = [
+  'roadmapPlanning',
+  'abTesting',
+  'sql',
+  'jiraConfluence',
+  'figma',
+  'wireframing',
+  'marketAnalysis',
+  'okrsKpis',
+  'apiDesign',
+  'businessModeling',
+  'presentationDesign',
+  'crossFunctionalLeadership',
 ]
 
 export const languages = [
-  { name: 'Portuguese', level: 'Native', percentage: 100 },
-  { name: 'English', level: 'Fluent', percentage: 90 },
+  { id: 'portuguese', percentage: 100 },
+  { id: 'english', percentage: 90 },
 ]

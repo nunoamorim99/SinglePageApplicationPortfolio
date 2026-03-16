@@ -1,5 +1,8 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { useUiStore } from '@/stores/ui'
+
+const { t, tm } = useI18n()
 
 const props = defineProps({
   course: { type: Object, required: true },
@@ -14,15 +17,14 @@ function viewCertificate() {
 
 <template>
   <article class="card flex flex-col">
-    <!-- Certificate image -->
     <button
       class="group relative -mx-6 -mt-6 mb-6 overflow-hidden rounded-t-2xl focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
-      aria-label="View certificate"
+      :aria-label="t('courses.viewCertificate')"
       @click="viewCertificate"
     >
       <img
         :src="course.certificateImage"
-        :alt="`Certificate for ${course.title}`"
+        :alt="t(`courses.items.${course.id}.title`)"
         class="aspect-[3/2] w-full object-cover transition-transform duration-500 group-hover:scale-105"
         loading="lazy"
       />
@@ -36,13 +38,12 @@ function viewCertificate() {
     </button>
 
     <div class="flex flex-1 flex-col">
-      <p class="text-xs font-medium text-gray-400">{{ course.provider }}</p>
-      <h3 class="mt-1 font-display text-lg font-semibold text-gray-900">{{ course.title }}</h3>
+      <p class="text-xs font-medium text-gray-400">{{ t(`courses.items.${course.id}.provider`) }}</p>
+      <h3 class="mt-1 font-display text-lg font-semibold text-gray-900 dark:text-white">{{ t(`courses.items.${course.id}.title`) }}</h3>
 
-      <!-- Skills -->
       <div class="mt-4 flex flex-wrap gap-1.5">
         <span
-          v-for="skill in course.skills"
+          v-for="skill in tm(`courses.items.${course.id}.skills`)"
           :key="skill"
           class="badge text-[11px]"
         >
@@ -50,7 +51,6 @@ function viewCertificate() {
         </span>
       </div>
 
-      <!-- Link -->
       <div class="mt-auto pt-6">
         <a
           :href="course.certificateUrl"
@@ -58,7 +58,7 @@ function viewCertificate() {
           rel="noopener noreferrer"
           class="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 transition-colors hover:text-primary-700"
         >
-          View Certificate
+          {{ t('courses.viewCertificate') }}
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
           </svg>

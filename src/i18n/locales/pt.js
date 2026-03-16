@@ -1,0 +1,322 @@
+export default {
+  nav: {
+    home: 'Início',
+    projects: 'Projetos',
+    courses: 'Cursos',
+    personal: 'Pessoal',
+  },
+  lang: {
+    en: 'English',
+    pt: 'Português',
+    es: 'Español',
+    de: 'Deutsch',
+    it: 'Italiano',
+    fr: 'Français',
+  },
+  hero: {
+    role: 'Gestor de Produto',
+    shortBio: 'Construo produtos que importam — combinando experiência técnica com empatia pelo utilizador para criar experiências digitais significativas.',
+    viewProjects: 'Ver Projetos',
+    downloadCv: 'Descarregar CV',
+  },
+  about: {
+    title: 'Sobre Mim',
+    bio: 'Gestor de Produto apaixonado, com uma sólida formação em engenharia e motivação para criar produtos digitais com impacto. Faço a ponte entre estratégia de negócio e tecnologia, transformando problemas complexos em soluções elegantes que os utilizadores adoram.',
+  },
+  interests: {
+    title: 'Interesses Profissionais',
+    subtitle: 'O que motiva o meu trabalho todos os dias',
+    items: {
+      strategy: {
+        title: 'Estratégia de Produto',
+        description: 'Definição de visão de produto, roadmaps e estratégias go-to-market alinhadas com objetivos de negócio e necessidades dos utilizadores.',
+      },
+      transform: {
+        title: 'Transformação Digital',
+        description: 'Utilização de tecnologia para modernizar processos, melhorar eficiência e criar novas propostas de valor para organizações.',
+      },
+      agile: {
+        title: 'Agile & Lean',
+        description: 'Aplicação de metodologias ágeis e princípios lean para entregar valor de forma iterativa e adaptar rapidamente a requisitos em mudança.',
+      },
+      data: {
+        title: 'Decisões Baseadas em Dados',
+        description: 'Utilização de analytics, experimentação e pesquisa de utilizadores para informar decisões de produto e medir impacto.',
+      },
+    },
+  },
+  education: {
+    title: 'Educação',
+    items: {
+      msc: {
+        degree: 'Mestrado em Engenharia e Gestão de Sistemas de Informação',
+        institution: 'Universidade do Minho',
+        description: 'Foco em design de sistemas de informação, gestão de projetos e a interseção entre tecnologia e estratégia de negócio.',
+      },
+    },
+  },
+  experience: {
+    title: 'Experiência Profissional',
+    subtitle: 'O meu percurso profissional e crescimento na carreira',
+    companies: {
+      'foco-criativo': {
+        name: 'Foco Criativo',
+        location: 'Póvoa de Lanhoso, Braga, Portugal · Híbrido',
+      },
+      'cmpl-lifeguard': {
+        name: 'Câmara Municipal da Póvoa de Lanhoso',
+        location: 'Póvoa de Lanhoso, Braga, Portugal · Presencial',
+      },
+      'diver-lifeguard': {
+        name: 'Diver Lanhoso',
+        location: 'Póvoa de Lanhoso, Braga, Portugal · Presencial',
+      },
+      zara: {
+        name: 'Zara',
+        location: 'Braga, Portugal · Presencial',
+      },
+    },
+    positions: {
+      'product-manager': {
+        title: 'Gestor de Produto',
+        type: 'Tempo inteiro',
+      },
+      'product-owner': {
+        title: 'Product Owner',
+        type: 'Tempo inteiro',
+      },
+      'software-engineer': {
+        title: 'Engenheiro de Software',
+        type: 'Tempo inteiro',
+      },
+      intern: {
+        title: 'Estagiário',
+        type: 'Estágio',
+        description: 'O principal objetivo deste estágio foi desenvolver a minha dissertação para o Mestrado em Engenharia e Gestão de Sistemas de Informação. A dissertação, intitulada "Design e otimização de processos logísticos e de produção", consistiu num levantamento dos processos logísticos e de produção da empresa Foco Criativo e na sua análise. O objetivo foi desenvolver uma proposta de otimização para ajudar a empresa a tornar-se mais eficiente.',
+      },
+      'lifeguard-cmpl': {
+        title: 'Nadador Salvador',
+        type: 'Sazonal',
+      },
+      'lifeguard-diver': {
+        title: 'Nadador Salvador',
+        type: 'Sazonal',
+      },
+      cashier: {
+        title: 'Assistente de Caixa',
+        type: 'Contrato',
+      },
+    },
+  },
+  cv: {
+    title: 'Quer o panorama completo?',
+    subtitle: 'Descarregue o meu CV para uma visão completa da minha experiência e qualificações.',
+    button: 'Descarregar CV (PDF)',
+  },
+  skills: {
+    title: 'Competências & Idiomas',
+    subtitle: 'Competências-chave e capacidades de comunicação',
+    topTitle: 'Principais Competências',
+    otherTitle: 'Outras Competências',
+    langTitle: 'Idiomas',
+    top: {
+      productStrategy: 'Estratégia de Produto',
+      agileScrum: 'Agile / Scrum',
+      dataAnalysis: 'Análise de Dados',
+      stakeholderManagement: 'Gestão de Stakeholders',
+      userResearch: 'Pesquisa de Utilizadores',
+    },
+    other: {
+      roadmapPlanning: 'Planeamento de Roadmap',
+      abTesting: 'Testes A/B',
+      sql: 'SQL',
+      jiraConfluence: 'Jira & Confluence',
+      figma: 'Figma',
+      wireframing: 'Wireframing',
+      marketAnalysis: 'Análise de Mercado',
+      okrsKpis: 'OKRs & KPIs',
+      apiDesign: 'Design de APIs',
+      businessModeling: 'Modelação de Negócio',
+      presentationDesign: 'Design de Apresentações',
+      crossFunctionalLeadership: 'Liderança Cross-functional',
+    },
+    languages: {
+      portuguese: { name: 'Português', level: 'Nativo' },
+      english: { name: 'Inglês', level: 'Fluente' },
+    },
+  },
+  projects: {
+    title: 'Projetos',
+    subtitle: 'Uma seleção de produtos que ajudei a construir e lançar',
+    toolsLabel: 'Ferramentas & Tecnologias',
+    items: {
+      'mobile-app': {
+        title: 'HealthTrack — App de Bem-Estar',
+        role: 'Gestor de Produto',
+        description: 'Liderei o desenvolvimento completo de uma aplicação móvel de bem-estar desenhada para ajudar utilizadores a monitorizar hábitos diários, definir objetivos de saúde e receber recomendações personalizadas. Geri uma equipa multidisciplinar de 6 pessoas, defini o roadmap do produto e coordenei com stakeholders para alinhar objetivos de negócio com necessidades dos utilizadores. A app alcançou 4,6 estrelas e 15 mil downloads no primeiro trimestre.',
+      },
+      'web-app': {
+        title: 'InsightBoard — Painel de Analytics',
+        role: 'Product Owner',
+        description: 'Responsável pela visão e backlog de um painel de analytics web que agrega dados de múltiplas ferramentas de negócio numa única vista acionável. Realizei pesquisa extensiva com mais de 30 stakeholders, defini user stories e priorizei funcionalidades usando scoring RICE. Entreguei o MVP em 8 semanas, reduzindo o tempo de geração de relatórios em 60% para a equipa de operações.',
+      },
+    },
+  },
+  courses: {
+    title: 'Cursos & Certificações',
+    subtitle: 'Aprendizagem contínua para me manter atualizado e relevante',
+    viewCertificate: 'Ver Certificado',
+    items: {
+      'product-management': {
+        title: 'Fundamentos de Gestão de Produto',
+        provider: 'Coursera — Universidade da Virgínia',
+        skills: ['Ciclo de Vida do Produto', 'Pesquisa de Mercado', 'Definição de MVP', 'Go-to-Market'],
+      },
+      'agile-scrum': {
+        title: 'Agile com Atlassian Jira',
+        provider: 'Atlassian University',
+        skills: ['Scrum', 'Kanban', 'Planeamento de Sprints', 'Refinamento de Backlog'],
+      },
+      'data-analytics': {
+        title: 'Certificado Profissional em Análise de Dados Google',
+        provider: 'Google — Coursera',
+        skills: ['SQL', 'Visualização de Dados', 'Programação R', 'Folhas de Cálculo'],
+      },
+      'ux-design': {
+        title: 'Design UX & Pesquisa para Gestores de Produto',
+        provider: 'Interaction Design Foundation',
+        skills: ['Pesquisa de Utilizadores', 'Wireframing', 'Testes de Usabilidade', 'Design Thinking'],
+      },
+    },
+  },
+  personal: {
+    title: 'Para Além do Trabalho',
+    intro: 'Há mais na vida do que roadmaps e sprint planning. Aqui fica um vislumbre das coisas que me inspiram, me dão energia e me definem fora do trabalho.',
+    explore: 'Explorar',
+    backToPersonal: 'Voltar a Pessoal',
+    sections: {
+      travel: {
+        title: 'Viagens',
+        description: 'Explorar novos lugares, culturas e gastronomias pelo mundo.',
+      },
+      sports: {
+        title: 'Desporto',
+        description: 'Manter-me ativo através de corrida, ciclismo e aventuras ao ar livre.',
+      },
+      photography: {
+        title: 'Fotografia',
+        description: 'Capturar momentos e perspetivas através da lente.',
+      },
+      hobbies: {
+        title: 'Outros Hobbies',
+        description: 'Leitura, cozinha, gaming e outras coisas que tornam a vida interessante.',
+      },
+    },
+  },
+  travel: {
+    title: 'Viagens',
+    subtitle: 'Lugares que tive a sorte de explorar',
+    visitedCities: 'Cidades Visitadas',
+    cities: {
+      venice: {
+        city: 'Veneza',
+        country: 'Itália',
+        description: 'Explorei os canais sinuosos, visitei a Basílica de São Marcos e perdi-me da forma mais bonita possível.',
+      },
+      barcelona: {
+        city: 'Barcelona',
+        country: 'Espanha',
+        description: 'Deslumbrado pela arquitetura de Gaudí, a energia da La Rambla e a costa mediterrânica.',
+      },
+      paris: {
+        city: 'Paris',
+        country: 'França',
+        description: 'A cidade das luzes fez jus ao seu nome — do Louvre a Montmartre, cada canto conta uma história.',
+      },
+      london: {
+        city: 'Londres',
+        country: 'Reino Unido',
+        description: 'Uma mistura perfeita de história e modernidade — da Tower Bridge aos vibrantes mercados de Camden.',
+      },
+      lisbon: {
+        city: 'Lisboa',
+        country: 'Portugal',
+        description: 'A capital do meu país nunca desilude — os elétricos, os pastéis de nata, as vistas de Alfama.',
+      },
+    },
+  },
+  sports: {
+    title: 'Desporto',
+    subtitle: 'Manter-me ativo, definir metas, superar limites',
+    achievementsTitle: 'Conquistas & Marcos',
+    items: {
+      running: {
+        name: 'Corrida',
+        description: 'A corrida de longa distância mantém-me centrado e focado. Nada se compara à clareza que vem depois de uma corrida matinal.',
+      },
+      cycling: {
+        name: 'Ciclismo',
+        description: 'Explorar novas rotas sobre duas rodas — desde deslocações na cidade até passeios de fim de semana no campo.',
+      },
+    },
+    achievements: {
+      halfMarathon: {
+        title: 'Primeira Meia Maratona',
+        description: 'Completei a minha primeira corrida de 21,1 km com um tempo de 1h 52min.',
+      },
+      cycling1000: {
+        title: 'Marco de 1000 km em Ciclismo',
+        description: 'Atingi 1000 km de distância acumulada em ciclismo num único ano.',
+      },
+      '10kPb': {
+        title: 'Recorde Pessoal nos 10K',
+        description: 'Alcancei um novo recorde pessoal de 46 minutos numa corrida de 10K.',
+      },
+      centuryRide: {
+        title: 'Primeira Volta de 100 km',
+        description: 'Completei o meu primeiro passeio de 100 km de bicicleta pela região do Minho.',
+      },
+    },
+  },
+  photography: {
+    title: 'Fotografia',
+    subtitle: 'Momentos que vale a pena recordar, enquadrados pela minha lente',
+    categories: {
+      street: 'Rua',
+      landscape: 'Paisagem',
+      architecture: 'Arquitetura',
+    },
+    photos: {
+      1: 'Cena de rua na hora dourada',
+      2: 'Paisagem montanhosa ao nascer do sol',
+      3: 'Detalhe arquitetónico de um edifício moderno',
+      4: 'Caminho em floresta de outono',
+      5: 'Pôr do sol costeiro com nuvens dramáticas',
+      6: 'Café urbano com luz matinal',
+      7: 'Fachada de igreja histórica',
+      8: 'Reflexos noturnos da cidade na água',
+      9: 'Panorama de vale verde',
+    },
+  },
+  hobbies: {
+    title: 'Outros Hobbies',
+    subtitle: 'As pequenas coisas que tornam a vida mais interessante',
+    items: {
+      reading: {
+        title: 'Leitura',
+        description: 'Desde livros de gestão de produto a ficção científica — a leitura amplia perspetivas e alimenta a criatividade. Atualmente a explorar economia comportamental e design thinking.',
+      },
+      cooking: {
+        title: 'Cozinha',
+        description: 'Experimentar receitas tradicionais portuguesas e cozinhas internacionais. Cozinhar é a minha forma de descontrair e juntar pessoas.',
+      },
+      gaming: {
+        title: 'Gaming',
+        description: 'Jogos de estratégia e simulação que desafiam a resolução de problemas. Desde construtores de cidades a aventuras narrativas.',
+      },
+    },
+  },
+  footer: {
+    rights: 'Todos os direitos reservados.',
+  },
+}

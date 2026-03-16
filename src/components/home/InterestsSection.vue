@@ -1,5 +1,8 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { profile } from '@/data/profile'
+
+const { t } = useI18n()
 
 const iconMap = {
   strategy: `<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />`,
@@ -10,23 +13,23 @@ const iconMap = {
 </script>
 
 <template>
-  <section id="interests" class="bg-gray-50/50 py-20">
+  <section id="interests" class="bg-gray-50/50 py-20 dark:bg-neutral-900/50">
     <div class="section-container">
       <div class="text-center">
-        <h2 class="section-title">Professional Interests</h2>
-        <p class="section-subtitle">What drives my work every day</p>
+        <h2 class="section-title">{{ t('interests.title') }}</h2>
+        <p class="section-subtitle">{{ t('interests.subtitle') }}</p>
       </div>
       <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <div
-          v-for="interest in profile.professionalInterests"
-          :key="interest.title"
+          v-for="id in profile.interestIds"
+          :key="id"
           class="card group text-center"
         >
-          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" v-html="iconMap[interest.icon]" />
+          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/30">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" v-html="iconMap[id]" />
           </div>
-          <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">{{ interest.title }}</h3>
-          <p class="mt-2 text-sm leading-relaxed text-gray-500">{{ interest.description }}</p>
+          <h3 class="mt-4 font-display text-lg font-semibold text-gray-900 dark:text-white">{{ t(`interests.items.${id}.title`) }}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-gray-500 dark:text-gray-400">{{ t(`interests.items.${id}.description`) }}</p>
         </div>
       </div>
     </div>

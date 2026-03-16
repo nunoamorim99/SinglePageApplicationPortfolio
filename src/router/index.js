@@ -56,6 +56,10 @@ const routes = [
   },
 ]
 
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual'
+}
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
