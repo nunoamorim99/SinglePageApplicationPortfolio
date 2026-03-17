@@ -1,7 +1,12 @@
+import focoCriativoLogo from '@/assets/logos/foco-criativo.png'
+import cmplLogo from '@/assets/logos/cmpl.png'
+import diverLanhosoLogo from '@/assets/logos/diver-lanhoso.png'
+import zaraLogo from '@/assets/logos/zara.png'
+
 export const experience = [
   {
     id: 'foco-criativo',
-    logo: 'https://picsum.photos/seed/foco-criativo/100/100',
+    logo: focoCriativoLogo,
     positions: [
       {
         id: 'product-manager',
@@ -26,7 +31,7 @@ export const experience = [
   },
   {
     id: 'cmpl-lifeguard',
-    logo: 'https://picsum.photos/seed/cmpl/100/100',
+    logo: cmplLogo,
     positions: [
       {
         id: 'lifeguard-cmpl',
@@ -36,7 +41,7 @@ export const experience = [
   },
   {
     id: 'diver-lifeguard',
-    logo: 'https://picsum.photos/seed/diver/100/100',
+    logo: diverLanhosoLogo,
     positions: [
       {
         id: 'lifeguard-diver',
@@ -46,7 +51,7 @@ export const experience = [
   },
   {
     id: 'zara',
-    logo: 'https://picsum.photos/seed/zara-logo/100/100',
+    logo: zaraLogo,
     positions: [
       {
         id: 'cashier',

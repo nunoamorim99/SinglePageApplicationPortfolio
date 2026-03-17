@@ -3,7 +3,17 @@
     "allow": [
       "Bash(mkdir -p src/i18n/locales)",
       "Bash(npm install:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "WebFetch(domain:vue-bits.dev)",
+      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/Ballpit)",
+      "Bash(npx jsrepo@latest init)",
+      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/Ballpit --path ./src/components --yes)",
+      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/Ballpit --yes)",
+      "Bash(npx vite:*)",
+      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/GlassSurface --yes)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\NunoAmorim\\Desktop\\FocoCriativo\\Portfólio\\Repo-SPAPortfolio\\SinglePageApplicationPortfolio\\src\\assets"
     ]
   }
 }

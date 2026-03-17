@@ -80,19 +80,18 @@ export default {
       'product-manager': {
         title: 'Product Manager',
         type: 'Full-time',
-        description: 'The main objective of this internship was to develop my dissertation for my Master\'s degree in Information Systems Engineering and Management. My dissertation, entitled "Design and optimization of logistics and production processes", consisted of a survey of the logistics and production processes of the company Foco Criativo and an analysis of them. The aim was to develop an optimization proposal to help the company become more efficient.',
-
+        description: 'Currently, I work as Product Manager for Movize, where I lead the product strategy and oversee its continuous development and growth. My responsibilities include defining the product vision, identifying opportunities for improvement, and aligning cross-functional teams around strategic goals. I collaborate with stakeholders, designers, and engineering teams to shape the product roadmap, prioritize initiatives, and ensure the product evolves according to market needs and user insights. My focus is on delivering high-value features, improving user experience, and leveraging data and research to guide product decisions and maximize the impact of Movize.',
       },
       'product-owner': {
         title: 'Product Owner',
         type: 'Full-time',
-        description: 'The main objective of this internship was to develop my dissertation for my Master\'s degree in Information Systems Engineering and Management. My dissertation, entitled "Design and optimization of logistics and production processes", consisted of a survey of the logistics and production processes of the company Foco Criativo and an analysis of them. The aim was to develop an optimization proposal to help the company become more efficient.',
+        description: 'As Product Owner, I became responsible for the development and evolution of Movize, managing the product backlog and ensuring alignment between business goals, user needs, and technical implementation. My role involved defining product requirements, prioritizing features, and translating strategic objectives into clear user stories for the development team. I worked closely with designers, developers, and stakeholders to ensure the product delivered value while maintaining a strong focus on user experience and product quality. Through backlog management, sprint planning, and continuous feedback cycles, I helped guide the product roadmap and ensured the team delivered meaningful and impactful features for Movize.',
 
       },
       'software-engineer': {
         title: 'Software Engineer',
         type: 'Full-time',
-        description: 'The main objective of this internship was to develop my dissertation for my Master\'s degree in Information Systems Engineering and Management. My dissertation, entitled "Design and optimization of logistics and production processes", consisted of a survey of the logistics and production processes of the company Foco Criativo and an analysis of them. The aim was to develop an optimization proposal to help the company become more efficient.',
+        description: 'During this period, I worked primarily as a Front-End Software Engineer, focusing on the development of user-facing features and improving the overall user experience of the company’s digital products. My responsibilities included implementing responsive interfaces, developing reusable components, and collaborating closely with design and product teams to translate wireframes and prototypes into functional applications. I worked mainly with modern front-end technologies such as JavaScript, React Native, HTML5, and CSS, ensuring performance, usability, and maintainability. Additionally, I participated in Agile development processes, contributing to sprint planning, code reviews, and continuous improvements to the product\'s interface and interaction design.',
 
       },
       intern: {
@@ -103,14 +102,20 @@ export default {
       'lifeguard-cmpl': {
         title: 'Lifeguard',
         type: 'Seasonal',
+        description: 'I worked as a Lifeguard at Praia Fluvial de Verim and the Municipal Swimming Pools of Póvoa de Lanhoso, ensuring the safety and well-being of visitors in aquatic environments. My responsibilities included monitoring swimming areas, enforcing safety regulations, and responding quickly to emergencies when necessary. In addition to surveillance and rescue readiness, I provided assistance and guidance to visitors, helping maintain a safe, organized, and welcoming environment. This role required strong responsibility, attention, communication, and teamwork, especially during peak summer periods with a high number of visitors.',
+
       },
       'lifeguard-diver': {
         title: 'Lifeguard',
         type: 'Seasonal',
+        description: 'At Diver Lanhoso, I worked as a lifeguard responsible for supervising aquatic activities and guaranteeing the safety of participants in recreational environments. My role involved continuous monitoring of the water areas, preventing risky situations, and intervening when necessary to ensure safe conditions for all visitors. Working in a dynamic outdoor environment required quick decision-making, situational awareness, and clear communication with both visitors and team members to maintain a secure and enjoyable experience.',
+
       },
       cashier: {
         title: 'Cashier Assistant',
         type: 'Contract',
+        description: 'I worked as a Cashier at Zara, where I was responsible for managing customer transactions and providing a positive in-store experience. My role involved handling payments, assisting customers during the checkout process, and ensuring accuracy and efficiency in all transactions. In addition to cashier duties, I supported the store team in maintaining an organized retail environment and delivering high-quality customer service. This experience strengthened my communication, problem-solving, and customer relationship skills, while working in a fast-paced retail environment.',
+
       },
     },
   },
