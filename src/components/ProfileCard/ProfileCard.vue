@@ -437,7 +437,7 @@ onUnmounted(() => {
       hsl(180, 10%, 60%) 3.8%,
       hsl(180, 29%, 66%) 4.5%,
       hsl(180, 10%, 60%) 5.2%,
-      #0e152e 10%,
+      #000000 10%,
       #0e152e 12%
     ),
     radial-gradient(
@@ -710,7 +710,7 @@ onUnmounted(() => {
   font-size: 16px;
   margin: 0 auto;
   width: min-content;
-  background-image: linear-gradient(to bottom, #fff, #4a4ac0);
+  background-image: linear-gradient(to bottom, #fff, #bd0c0c);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
   background-clip: text;

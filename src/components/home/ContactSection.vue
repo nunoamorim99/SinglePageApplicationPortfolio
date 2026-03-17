@@ -11,7 +11,7 @@ const handleContact = () => {
 </script>
 
 <template>
-  <section id="contact" class="py-20 bg-gray-50/50 dark:bg-neutral-900/50">
+  <section id="contact" class="py-20 bg-teal-100 dark:bg-neutral-900/50">
     <div class="section-container">
       <div class="text-center">
         <h2 class="section-title">{{ t('contact.title') }}</h2>

@@ -19,19 +19,17 @@ function viewCertificate() {
   <article class="card flex flex-col">
     <button
       class="group relative -mx-6 -mt-6 mb-6 overflow-hidden rounded-t-2xl focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
-      :aria-label="t('courses.viewCertificate')"
-      @click="viewCertificate"
-    >
-      <img
-        :src="course.certificateImage"
-        :alt="t(`courses.items.${course.id}.title`)"
+      :aria-label="t('courses.viewCertificate')" @click="viewCertificate">
+      <img :src="course.certificateImage" :alt="t(`courses.items.${course.id}.title`)"
         class="aspect-[3/2] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-        loading="lazy"
-      />
-      <div class="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
-        <span class="scale-90 rounded-full bg-white/90 p-3 opacity-0 shadow-lg transition-all group-hover:scale-100 group-hover:opacity-100">
+        loading="lazy" />
+      <div
+        class="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
+        <span
+          class="scale-90 rounded-full bg-white/90 p-3 opacity-0 shadow-lg transition-all group-hover:scale-100 group-hover:opacity-100">
           <svg class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
           </svg>
         </span>
       </div>
@@ -39,28 +37,22 @@ function viewCertificate() {
 
     <div class="flex flex-1 flex-col">
       <p class="text-xs font-medium text-gray-400">{{ t(`courses.items.${course.id}.provider`) }}</p>
-      <h3 class="mt-1 font-display text-lg font-semibold text-gray-900 dark:text-white">{{ t(`courses.items.${course.id}.title`) }}</h3>
+      <h3 class="mt-1 font-display text-lg font-semibold text-gray-900 dark:text-white">{{
+        t(`courses.items.${course.id}.title`) }}</h3>
 
       <div class="mt-4 flex flex-wrap gap-1.5">
-        <span
-          v-for="skill in tm(`courses.items.${course.id}.skills`)"
-          :key="skill"
-          class="badge text-[11px]"
-        >
+        <span v-for="skill in tm(`courses.items.${course.id}.skills`)" :key="skill" class="badge text-[11px]">
           {{ skill }}
         </span>
       </div>
 
       <div class="mt-auto pt-6">
-        <a
-          :href="course.certificateUrl"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 transition-colors hover:text-primary-700"
-        >
+        <a :href="course.certificateUrl" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 transition-colors hover:text-primary-700">
           {{ t('courses.viewCertificate') }}
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
           </svg>
         </a>
       </div>

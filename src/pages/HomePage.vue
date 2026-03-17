@@ -17,7 +17,7 @@ import ContactSection from '@/components/home/ContactSection.vue'
     <EducationSection />
     <ExperienceSection />
     <SkillsSection />
-    <CvSection />
+    <!-- <CvSection /> -->
     <ContactSection />
   </div>
 </template>

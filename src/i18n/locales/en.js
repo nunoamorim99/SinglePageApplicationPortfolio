@@ -178,25 +178,135 @@ export default {
     subtitle: 'Continuous learning to stay sharp and relevant',
     viewCertificate: 'View Certificate',
     items: {
-      'product-management': {
-        title: 'Product Management Fundamentals',
-        provider: 'Coursera — University of Virginia',
+      'pc-pm-1': {
+        title: 'Product Management: An Introduction',
+        provider: 'Coursera — IBM',
         skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
       },
-      'agile-scrum': {
-        title: 'Agile with Atlassian Jira',
-        provider: 'Atlassian University',
-        skills: ['Scrum', 'Kanban', 'Sprint Planning', 'Backlog Grooming'],
+      'pc-pm-2': {
+        title: 'Product Management: Foundations & Stakeholder Collaboration',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
       },
-      'data-analytics': {
-        title: 'Google Data Analytics Professional Certificate',
-        provider: 'Google — Coursera',
-        skills: ['SQL', 'Data Visualization', 'R Programming', 'Spreadsheets'],
+      'pc-pm-3': {
+        title: 'Product Management: Initial Product Strategy and Plan',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
       },
-      'ux-design': {
-        title: 'UX Design & Research for Product Managers',
-        provider: 'Interaction Design Foundation',
-        skills: ['User Research', 'Wireframing', 'Usability Testing', 'Design Thinking'],
+      'pc-pm-4': {
+        title: 'Product Management: Developing and Delivering a New Produt',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-pm-5': {
+        title: 'Introduction to Artificial Intelligence (AI)',
+        provider: 'Coursera — IBM',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-pm-6': {
+        title: 'Generative AI: Introduction and Applications',
+        provider: 'Coursera — IBM',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-ibm-product-owner': {
+        title: 'Professional Certificate: IBM Product Owner',
+        provider: 'Coursera — IBM',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-po-1': {
+        title: 'The Product Owner Profession: Unleashing the Power of SCRUM',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-po-2': {
+        title: 'Introduction to Agile Development and SCRUM',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-po-3': {
+        title: 'Information Technology (IT) Fundamentals for Everyone',
+        provider: 'Coursera — IBM',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-po-4': {
+        title: 'Product Owner: Communication & Stakeholder Management',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-po-5': {
+        title: 'Product Owner: Essential Skilld and Tools for Innovation',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-po-6': {
+        title: 'Practice Exam for Scrum.org PSPO I Certification',
+        provider: 'Coursera — SkillUp',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-microsoft-ux-design': {
+        title: 'Professional Certificate: Microsoft UX Design',
+        provider: 'Coursera — Microsoft',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-microsoft-ux-design-1': {
+        title: 'Fundamentals of UI/UX Design',
+        provider: 'Coursera — Microsoft',
+        skills: ['Wireframing', 'User Interface and User Experience (UI/UX) Design', 'User Experience Design', 'User Research', 'Prototyping', 'User Experience', 'Information Architecture', 'Design Thinking', 'Human Centered Design'],
+      },
+      'pc-microsoft-ux-design-2': {
+        title: 'Design for User Experience',
+        provider: 'Coursera — Microsoft',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-microsoft-ux-design-3': {
+        title: 'User Interface Design and Prototyping',
+        provider: 'Coursera — Microsoft',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-microsoft-ux-design-4': {
+        title: 'UX Design in Practice: Acessibility and Collaboration',
+        provider: 'Coursera — Microsoft',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-meta-fe-1': {
+        title: 'Introduction to Front-End Development',
+        provider: 'Coursera — Meta',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-meta-fe-2': {
+        title: 'Programming with JavaScript',
+        provider: 'Coursera — Meta',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-meta-fe-3': {
+        title: 'Version Control',
+        provider: 'Coursera — Meta',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-meta-fe-4': {
+        title: 'HTML and CSS in depth',
+        provider: 'Coursera — Meta',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'pc-meta-fe-5': {
+        title: 'React Basics',
+        provider: 'Coursera — Meta',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'johnsHopkins-1': {
+        title: 'HTML, CSS, and Javascript for Web Developers',
+        provider: 'Coursera — Johns Hopkins University',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
+      },
+      'intro-jira': {
+        title: 'Introduction to Jira',
+        provider: 'Coursera — Atlassian',
+        skills: ['Project Management Software', 'Role-Based Access Control (RBAC)', 'Collaborative Software', 'Prioritization', 'Issue Tracking', 'Workflow Management'],
+      },
+      'maas-adoption-use': {
+        title: 'MaaS_ Adoption and Use',
+        provider: 'Coursera — Eindhoven University of Technology',
+        skills: ['Product Lifecycle', 'Market Research', 'MVP Definition', 'Go-to-Market'],
       },
     },
   },
