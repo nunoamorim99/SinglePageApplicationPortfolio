@@ -316,6 +316,12 @@ export default {
       },
     },
   },
+  contact: {
+    title: 'Kontaktieren Sie mich',
+    subtitle: 'Zögern Sie nicht, mich zu kontaktieren — ich freue mich von Ihnen zu hören',
+    button: 'Kontakt',
+    status: 'Verfügbar',
+  },
   footer: {
     rights: 'Alle Rechte vorbehalten.',
   },

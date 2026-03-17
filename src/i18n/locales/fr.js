@@ -316,6 +316,12 @@ export default {
       },
     },
   },
+  contact: {
+    title: 'Contactez-moi',
+    subtitle: 'N\'hésitez pas à me contacter — j\'adorerais avoir de vos nouvelles',
+    button: 'Contact',
+    status: 'Disponible',
+  },
   footer: {
     rights: 'Tous droits réservés.',
   },

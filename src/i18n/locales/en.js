@@ -327,6 +327,12 @@ export default {
       },
     },
   },
+  contact: {
+    title: 'Contact Me',
+    subtitle: 'Feel free to reach out — I\'d love to hear from you',
+    button: 'Contact',
+    status: 'Available',
+  },
   footer: {
     rights: 'All rights reserved.',
   },

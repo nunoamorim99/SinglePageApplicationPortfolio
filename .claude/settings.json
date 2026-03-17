@@ -10,7 +10,8 @@
       "Bash(npx jsrepo@latest add https://vue-bits.dev/r/Ballpit --path ./src/components --yes)",
       "Bash(npx jsrepo@latest add https://vue-bits.dev/r/Ballpit --yes)",
       "Bash(npx vite:*)",
-      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/GlassSurface --yes)"
+      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/GlassSurface --yes)",
+      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/ProfileCard --yes)"
     ],
     "additionalDirectories": [
       "c:\\Users\\NunoAmorim\\Desktop\\FocoCriativo\\Portfólio\\Repo-SPAPortfolio\\SinglePageApplicationPortfolio\\src\\assets"
