@@ -7,23 +7,14 @@
         <div class="pc-glare" />
 
         <div class="pc-content pc-avatar-content">
-          <img
-            class="avatar"
-            :src="avatarUrl"
-            :alt="`${name || 'User'} avatar`"
-            loading="lazy"
-            @error="handleAvatarError"
-          />
+          <img class="avatar" :src="avatarUrl" :alt="`${name || 'User'} avatar`" loading="lazy"
+            @error="handleAvatarError" />
 
           <div v-if="showUserInfo" class="pc-user-info">
             <div class="pc-user-details">
               <div class="pc-mini-avatar">
-                <img
-                  :src="miniAvatarUrl || avatarUrl"
-                  :alt="`${name || 'User'} mini avatar`"
-                  loading="lazy"
-                  @error="handleMiniAvatarError"
-                />
+                <img :src="miniAvatarUrl || avatarUrl" :alt="`${name || 'User'} mini avatar`" loading="lazy"
+                  @error="handleMiniAvatarError" />
               </div>
 
               <div class="pc-user-text">
@@ -33,13 +24,8 @@
               </div>
             </div>
 
-            <button
-              class="pc-contact-btn"
-              @click="handleContactClick"
-              style="pointer-events: auto"
-              type="button"
-              :aria-label="`Contact ${name || 'user'}`"
-            >
+            <button class="pc-contact-btn" @click="handleContactClick" style="pointer-events: auto" type="button"
+              :aria-label="`Contact ${name || 'user'}`">
               {{ contactText }}
             </button>
           </div>
@@ -104,9 +90,9 @@ const wrapRef = useTemplateRef<HTMLDivElement>('wrapRef');
 const cardRef = useTemplateRef<HTMLElement>('cardRef');
 
 const DEFAULT_BEHIND_GRADIENT =
-  'radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y),hsla(266,100%,90%,var(--card-opacity)) 4%,hsla(266,50%,80%,calc(var(--card-opacity)*0.75)) 10%,hsla(266,25%,70%,calc(var(--card-opacity)*0.5)) 50%,hsla(266,0%,60%,0) 100%),radial-gradient(35% 52% at 55% 20%,#00ffaac4 0%,#073aff00 100%),radial-gradient(100% 100% at 50% 50%,#00c1ffff 1%,#073aff00 76%),conic-gradient(from 124deg at 50% 50%,#c137ffff 0%,#07c6ffff 40%,#07c6ffff 60%,#c137ffff 100%)';
+  'radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y),hsla(16,100%,85%,var(--card-opacity)) 4%,hsla(16,60%,70%,calc(var(--card-opacity)*0.75)) 10%,hsla(16,30%,60%,calc(var(--card-opacity)*0.5)) 50%,hsla(16,0%,50%,0) 100%),radial-gradient(35% 52% at 55% 20%,#8b9e7cc4 0%,#1a1a1a00 100%),radial-gradient(100% 100% at 50% 50%,#ff4d00ff 1%,#1a1a1a00 76%),conic-gradient(from 124deg at 50% 50%,#ff4d00ff 0%,#8b9e7cff 40%,#8b9e7cff 60%,#ff4d00ff 100%)';
 
-const DEFAULT_INNER_GRADIENT = 'linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)';
+const DEFAULT_INNER_GRADIENT = 'linear-gradient(145deg,#1a1a1acc 0%,#ff4d0033 100%)';
 
 const ANIMATION_CONFIG = {
   SMOOTH_DURATION: 600,
@@ -291,19 +277,19 @@ onUnmounted(() => {
   --icon: none;
   --behind-gradient: none;
   --inner-gradient: none;
-  --sunpillar-1: hsl(2, 100%, 73%);
-  --sunpillar-2: hsl(53, 100%, 69%);
-  --sunpillar-3: hsl(93, 100%, 69%);
-  --sunpillar-4: hsl(176, 100%, 76%);
-  --sunpillar-5: hsl(228, 100%, 74%);
-  --sunpillar-6: hsl(283, 100%, 73%);
+  --sunpillar-1: hsl(16, 100%, 73%);
+  --sunpillar-2: hsl(38, 60%, 78%);
+  --sunpillar-3: hsl(105, 30%, 70%);
+  --sunpillar-4: hsl(28, 80%, 65%);
+  --sunpillar-5: hsl(16, 100%, 55%);
+  --sunpillar-6: hsl(105, 30%, 50%);
   --sunpillar-clr-1: var(--sunpillar-1);
   --sunpillar-clr-2: var(--sunpillar-2);
   --sunpillar-clr-3: var(--sunpillar-3);
   --sunpillar-clr-4: var(--sunpillar-4);
   --sunpillar-clr-5: var(--sunpillar-5);
   --sunpillar-clr-6: var(--sunpillar-6);
-  --card-radius: 30px;
+  --card-radius: 0px;
 }
 
 .pc-card-wrapper {
@@ -321,7 +307,7 @@ onUnmounted(() => {
   background-position: inherit;
   border-radius: inherit;
   transition: all 0.5s ease;
-  filter: contrast(2) saturate(2) blur(36px);
+  filter: contrast(1.2) saturate(0.8) blur(36px) opacity(0.6);
   transform: scale(0.8) translate3d(0, 0, 0.1px);
   background-size: 100% 100%;
   background-image: var(--behind-gradient);
@@ -334,7 +320,7 @@ onUnmounted(() => {
 
 .pc-card-wrapper:hover::before,
 .pc-card-wrapper.active::before {
-  filter: contrast(1) saturate(2) blur(40px) opacity(1);
+  filter: contrast(1) saturate(0.6) blur(40px) opacity(0.5);
   transform: scale(0.9) translate3d(0, 0, 0.1px);
 }
 
@@ -347,8 +333,7 @@ onUnmounted(() => {
   position: relative;
   background-blend-mode: color-dodge, normal, normal, normal;
   animation: glow-bg 12s linear infinite;
-  box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px)
-    calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
+  box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px) calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
   transition: transform 1s ease;
   transform: translate3d(0, 0, 0.1px) rotateX(0deg) rotateY(0deg);
   background-size: 100% 100%;
@@ -358,16 +343,14 @@ onUnmounted(() => {
     50% 50%,
     0 0;
   background-image:
-    radial-gradient(
-      farthest-side circle at var(--pointer-x) var(--pointer-y),
-      hsla(266, 100%, 90%, var(--card-opacity)) 4%,
-      hsla(266, 50%, 80%, calc(var(--card-opacity) * 0.75)) 10%,
-      hsla(266, 25%, 70%, calc(var(--card-opacity) * 0.5)) 50%,
-      hsla(266, 0%, 60%, 0) 100%
-    ),
-    radial-gradient(35% 52% at 55% 20%, #00ffaac4 0%, #073aff00 100%),
-    radial-gradient(100% 100% at 50% 50%, #00c1ffff 1%, #073aff00 76%),
-    conic-gradient(from 124deg at 50% 50%, #c137ffff 0%, #07c6ffff 40%, #07c6ffff 60%, #c137ffff 100%);
+    radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y),
+      hsla(16, 100%, 85%, var(--card-opacity)) 4%,
+      hsla(16, 60%, 70%, calc(var(--card-opacity) * 0.75)) 10%,
+      hsla(16, 30%, 60%, calc(var(--card-opacity) * 0.5)) 50%,
+      hsla(16, 0%, 50%, 0) 100%),
+    radial-gradient(35% 52% at 55% 20%, #8b9e7cc4 0%, #1a1a1a00 100%),
+    radial-gradient(100% 100% at 50% 50%, #ff4d00ff 1%, #1a1a1a00 76%),
+    conic-gradient(from 124deg at 50% 50%, #ff4d00ff 0%, #8b9e7cff 40%, #8b9e7cff 60%, #ff4d00ff 100%);
   overflow: hidden;
 }
 
@@ -389,7 +372,7 @@ onUnmounted(() => {
   inset: 1px;
   position: absolute;
   background-image: var(--inner-gradient);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(26, 26, 26, 0.92);
   transform: translate3d(0, 0, 0.01px);
 }
 
@@ -405,9 +388,9 @@ onUnmounted(() => {
   -webkit-mask-size: 150%;
   -webkit-mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
   transition: filter 0.6s ease;
-  filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.5);
+  filter: brightness(0.5) contrast(1.2) saturate(0.15) opacity(0.3);
   animation: holo-bg 18s linear infinite;
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: soft-light;
 }
 
 .pc-shine,
@@ -421,36 +404,28 @@ onUnmounted(() => {
   background-size: cover;
   background-position: center;
   background-image:
-    repeating-linear-gradient(
-      0deg,
-      var(--sunpillar-clr-1) calc(var(--space) * 1),
-      var(--sunpillar-clr-2) calc(var(--space) * 2),
-      var(--sunpillar-clr-3) calc(var(--space) * 3),
-      var(--sunpillar-clr-4) calc(var(--space) * 4),
-      var(--sunpillar-clr-5) calc(var(--space) * 5),
-      var(--sunpillar-clr-6) calc(var(--space) * 6),
-      var(--sunpillar-clr-1) calc(var(--space) * 7)
-    ),
-    repeating-linear-gradient(
-      var(--angle),
-      #0e152e 0%,
-      hsl(180, 10%, 60%) 3.8%,
-      hsl(180, 29%, 66%) 4.5%,
-      hsl(180, 10%, 60%) 5.2%,
-      #000000 10%,
-      #0e152e 12%
-    ),
-    radial-gradient(
-      farthest-corner circle at var(--pointer-x) var(--pointer-y),
+    repeating-linear-gradient(0deg,
+      hsl(16, 12%, 35%) calc(var(--space) * 1),
+      hsl(28, 8%, 40%) calc(var(--space) * 2),
+      hsl(16, 10%, 32%) calc(var(--space) * 3),
+      hsl(0, 0%, 28%) calc(var(--space) * 4),
+      hsl(16, 12%, 35%) calc(var(--space) * 5)),
+    repeating-linear-gradient(var(--angle),
+      #1a1a1a 0%,
+      hsl(16, 8%, 42%) 3.8%,
+      hsl(16, 12%, 48%) 4.5%,
+      hsl(16, 8%, 42%) 5.2%,
+      #0d0d0d 10%,
+      #1a1a1a 12%),
+    radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y),
       hsla(0, 0%, 0%, 0.1) 12%,
       hsla(0, 0%, 0%, 0.15) 20%,
-      hsla(0, 0%, 0%, 0.25) 120%
-    );
+      hsla(0, 0%, 0%, 0.25) 120%);
   background-position:
     0 var(--background-y),
     var(--background-x) var(--background-y),
     center;
-  background-blend-mode: color, hard-light;
+  background-blend-mode: soft-light, soft-light;
   background-size:
     500% 500%,
     300% 300%,
@@ -469,7 +444,7 @@ onUnmounted(() => {
 
 .pc-card:hover .pc-shine,
 .pc-card.active .pc-shine {
-  filter: brightness(0.85) contrast(1.5) saturate(0.5);
+  filter: brightness(0.6) contrast(1.2) saturate(0.2) opacity(0.35);
   animation: none;
 }
 
@@ -477,21 +452,17 @@ onUnmounted(() => {
 .pc-card.active .pc-shine::before,
 .pc-card:hover .pc-shine::after,
 .pc-card.active .pc-shine::after {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .pc-shine::before {
   background-image:
-    linear-gradient(
-      45deg,
-      var(--sunpillar-4),
-      var(--sunpillar-5),
-      var(--sunpillar-6),
-      var(--sunpillar-1),
-      var(--sunpillar-2),
-      var(--sunpillar-3)
-    ),
-    radial-gradient(circle at var(--pointer-x) var(--pointer-y), hsl(0, 0%, 70%) 0%, hsla(0, 0%, 30%, 0.2) 90%),
+    linear-gradient(45deg,
+      hsl(16, 20%, 30%),
+      hsl(16, 40%, 45%),
+      hsl(28, 30%, 35%),
+      hsl(16, 20%, 30%)),
+    radial-gradient(circle at var(--pointer-x) var(--pointer-y), hsl(16, 15%, 60%) 0%, hsla(0, 0%, 20%, 0.2) 90%),
     var(--grain);
   background-size:
     250% 250%,
@@ -501,40 +472,31 @@ onUnmounted(() => {
     var(--pointer-x) var(--pointer-y),
     center,
     calc(var(--pointer-x) * 0.01) calc(var(--pointer-y) * 0.01);
-  background-blend-mode: color-dodge;
-  filter: brightness(calc(2 - var(--pointer-from-center))) contrast(calc(var(--pointer-from-center) + 2))
-    saturate(calc(0.5 + var(--pointer-from-center)));
+  background-blend-mode: soft-light;
+  filter: brightness(calc(1.5 - var(--pointer-from-center) * 0.3)) contrast(calc(var(--pointer-from-center) + 1.2)) saturate(calc(0.2 + var(--pointer-from-center) * 0.2));
   mix-blend-mode: luminosity;
 }
 
 .pc-shine::after {
   content: '';
   background-image:
-    repeating-linear-gradient(
-      0deg,
-      var(--sunpillar-clr-1) calc(5% * 1),
-      var(--sunpillar-clr-2) calc(5% * 2),
-      var(--sunpillar-clr-3) calc(5% * 3),
-      var(--sunpillar-clr-4) calc(5% * 4),
-      var(--sunpillar-clr-5) calc(5% * 5),
-      var(--sunpillar-clr-6) calc(5% * 6),
-      var(--sunpillar-clr-1) calc(5% * 7)
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      #0e152e 0%,
-      hsl(180, 10%, 60%) 3.8%,
-      hsl(180, 29%, 66%) 4.5%,
-      hsl(180, 10%, 60%) 5.2%,
-      #0e152e 10%,
-      #0e152e 12%
-    ),
-    radial-gradient(
-      farthest-corner circle at var(--pointer-x) var(--pointer-y),
-      hsla(0, 0%, 0%, 0.1) 12%,
-      hsla(0, 0%, 0%, 0.15) 20%,
-      hsla(0, 0%, 0%, 0.25) 120%
-    );
+    repeating-linear-gradient(0deg,
+      hsl(16, 15%, 35%) calc(5% * 1),
+      hsl(28, 10%, 40%) calc(5% * 2),
+      hsl(16, 10%, 30%) calc(5% * 3),
+      hsl(0, 0%, 25%) calc(5% * 4),
+      hsl(16, 15%, 35%) calc(5% * 5)),
+    repeating-linear-gradient(-45deg,
+      #1a1a1a 0%,
+      hsl(16, 10%, 40%) 3.8%,
+      hsl(16, 15%, 45%) 4.5%,
+      hsl(16, 10%, 40%) 5.2%,
+      #1a1a1a 10%,
+      #1a1a1a 12%),
+    radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y),
+      hsla(0, 0%, 0%, 0.05) 12%,
+      hsla(0, 0%, 0%, 0.1) 20%,
+      hsla(0, 0%, 0%, 0.2) 120%);
   background-position:
     0 var(--background-y),
     calc(var(--background-x) * 0.4) calc(var(--background-y) * 0.5),
@@ -543,20 +505,18 @@ onUnmounted(() => {
     200% 300%,
     700% 700%,
     100% 100%;
-  mix-blend-mode: difference;
-  filter: brightness(0.8) contrast(1.5);
+  mix-blend-mode: soft-light;
+  filter: brightness(0.7) contrast(1.2);
 }
 
 .pc-glare {
   transform: translate3d(0, 0, 1.1px);
   overflow: hidden;
-  background-image: radial-gradient(
-    farthest-corner circle at var(--pointer-x) var(--pointer-y),
-    hsl(248, 25%, 80%) 12%,
-    hsla(207, 40%, 30%, 0.8) 90%
-  );
+  background-image: radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y),
+      hsla(16, 15%, 75%, 0.4) 12%,
+      hsla(0, 0%, 20%, 0.3) 90%);
   mix-blend-mode: overlay;
-  filter: brightness(0.8) contrast(1.2);
+  filter: brightness(0.9) contrast(1.1);
   z-index: 4;
 }
 
@@ -580,13 +540,11 @@ onUnmounted(() => {
   inset: 0;
   z-index: 1;
   backdrop-filter: blur(30px);
-  mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 60%,
-    rgba(0, 0, 0, 1) 90%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  mask: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 1) 100%);
   pointer-events: none;
 }
 
@@ -602,7 +560,7 @@ onUnmounted(() => {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
+  border-radius: 0;
   padding: 12px 14px;
   pointer-events: auto;
 }
@@ -637,24 +595,30 @@ onUnmounted(() => {
 }
 
 .pc-handle {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1;
 }
 
 .pc-status {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
   line-height: 1;
 }
 
 .pc-contact-btn {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0;
   padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -663,7 +627,9 @@ onUnmounted(() => {
 }
 
 .pc-contact-btn:hover {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: #ff4d00;
+  background: rgba(255, 77, 0, 0.2);
+  color: #fff;
   transform: translateY(-1px);
   transition: all 0.2s ease;
 }
@@ -673,11 +639,9 @@ onUnmounted(() => {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transform: translate3d(
-    calc(var(--pointer-from-left) * -6px + 3px),
-    calc(var(--pointer-from-top) * -6px + 3px),
-    0.1px
-  ) !important;
+  transform: translate3d(calc(var(--pointer-from-left) * -6px + 3px),
+      calc(var(--pointer-from-top) * -6px + 3px),
+      0.1px) !important;
   z-index: 5;
   mix-blend-mode: luminosity;
 }
@@ -691,11 +655,11 @@ onUnmounted(() => {
 }
 
 .pc-details h3 {
-  font-weight: 600;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
   margin: 0;
   font-size: min(5svh, 3em);
-  margin: 0;
-  background-image: linear-gradient(to bottom, #fff, #6f6fbe);
+  background-image: linear-gradient(to bottom, #fdfcfa, #ff4d00);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -703,14 +667,16 @@ onUnmounted(() => {
 }
 
 .pc-details p {
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
   top: -12px;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   margin: 0 auto;
   width: min-content;
-  background-image: linear-gradient(to bottom, #fff, #bd0c0c);
+  background-image: linear-gradient(to bottom, #f9f6f1, #8b9e7c);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -815,7 +781,6 @@ onUnmounted(() => {
     left: 12px;
     right: 12px;
     padding: 8px 10px;
-    border-radius: 50px;
   }
 
   .pc-mini-avatar {
@@ -838,7 +803,6 @@ onUnmounted(() => {
   .pc-contact-btn {
     padding: 5px 10px;
     font-size: 10px;
-    border-radius: 50px;
   }
 }
 
@@ -858,7 +822,6 @@ onUnmounted(() => {
 
   .pc-user-info {
     padding: 6px 8px;
-    border-radius: 50px;
   }
 
   .pc-mini-avatar {
@@ -881,7 +844,6 @@ onUnmounted(() => {
   .pc-contact-btn {
     padding: 4px 8px;
     font-size: 9px;
-    border-radius: 50px;
   }
 }
 </style>

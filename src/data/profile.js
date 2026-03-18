@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Nuno Amorim',
-  photo: 'https://picsum.photos/seed/profile/400/400',
+  photo: 'src/assets/profilePhoto/profilephoto.jpg',
   location: 'Portugal',
   email: 'nunomamorim99@gmail.com',
   linkedin: 'https://linkedin.com/in/nunoamorim99',

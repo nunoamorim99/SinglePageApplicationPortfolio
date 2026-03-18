@@ -8,10 +8,6 @@ export default {
   lang: {
     en: 'English',
     pt: 'Português',
-    es: 'Español',
-    de: 'Deutsch',
-    it: 'Italiano',
-    fr: 'Français',
   },
   hero: {
     role: 'Product Manager',
