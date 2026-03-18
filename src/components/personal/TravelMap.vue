@@ -18,16 +18,16 @@ onMounted(async () => {
     scrollWheelZoom: false,
   }).setView([45, 10], 4)
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
     maxZoom: 18,
   }).addTo(map.value)
 
   const icon = L.divIcon({
     className: 'custom-marker',
-    html: `<div style="width:14px;height:14px;background:#4c6ef5;border:3px solid white;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);"></div>`,
-    iconSize: [14, 14],
-    iconAnchor: [7, 7],
+    html: `<div style="width:12px;height:12px;background:#ff4d00;border:2px solid #1a1a1a;box-shadow:0 2px 8px rgba(0,0,0,0.3);"></div>`,
+    iconSize: [12, 12],
+    iconAnchor: [6, 6],
   })
 
   props.cities.forEach((city) => {
@@ -46,7 +46,7 @@ onMounted(async () => {
 <template>
   <div
     ref="mapContainer"
-    class="h-[400px] w-full rounded-2xl sm:h-[500px]"
+    class="h-[400px] w-full border border-charcoal-100 dark:border-charcoal-700 sm:h-[500px]"
     role="img"
     aria-label="Interactive map showing visited cities"
   />

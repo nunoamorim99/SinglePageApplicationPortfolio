@@ -42,7 +42,7 @@ onUnmounted(() => document.removeEventListener('keydown', onKeydown))
     >
       <div
         v-if="ui.lightbox.open"
-        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4"
+        class="fixed inset-0 z-[100] flex items-center justify-center bg-charcoal/95 p-4"
         role="dialog"
         aria-modal="true"
         aria-label="Image lightbox"
@@ -50,11 +50,11 @@ onUnmounted(() => document.removeEventListener('keydown', onKeydown))
       >
         <!-- Close button -->
         <button
-          class="absolute right-4 top-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+          class="absolute right-6 top-6 bg-white/10 p-2.5 text-white transition-colors hover:bg-vermillion"
           aria-label="Close lightbox"
           @click="ui.closeLightbox()"
         >
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -62,11 +62,11 @@ onUnmounted(() => document.removeEventListener('keydown', onKeydown))
         <!-- Prev button -->
         <button
           v-if="hasPrev"
-          class="absolute left-4 rounded-full bg-white/10 p-3 text-white transition-colors hover:bg-white/20"
+          class="absolute left-6 bg-white/10 p-3 text-white transition-colors hover:bg-vermillion"
           aria-label="Previous image"
           @click="prev"
         >
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
           </svg>
         </button>
@@ -75,24 +75,24 @@ onUnmounted(() => document.removeEventListener('keydown', onKeydown))
         <img
           :src="currentImage"
           alt=""
-          class="max-h-[85vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
+          class="max-h-[85vh] max-w-[90vw] object-contain"
           loading="lazy"
         />
 
         <!-- Next button -->
         <button
           v-if="hasNext"
-          class="absolute right-4 rounded-full bg-white/10 p-3 text-white transition-colors hover:bg-white/20"
+          class="absolute right-6 bg-white/10 p-3 text-white transition-colors hover:bg-vermillion"
           aria-label="Next image"
           @click="next"
         >
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
         </button>
 
         <!-- Counter -->
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-white/10 px-4 py-1.5 text-sm text-white">
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-widest text-white/60">
           {{ ui.lightbox.index + 1 }} / {{ ui.lightbox.images.length }}
         </div>
       </div>

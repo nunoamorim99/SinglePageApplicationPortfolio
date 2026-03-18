@@ -5,7 +5,6 @@ import InterestsSection from '@/components/home/InterestsSection.vue'
 import EducationSection from '@/components/home/EducationSection.vue'
 import ExperienceSection from '@/components/home/ExperienceSection.vue'
 import SkillsSection from '@/components/home/SkillsSection.vue'
-import CvSection from '@/components/home/CvSection.vue'
 import ContactSection from '@/components/home/ContactSection.vue'
 </script>
 
@@ -17,7 +16,6 @@ import ContactSection from '@/components/home/ContactSection.vue'
     <EducationSection />
     <ExperienceSection />
     <SkillsSection />
-    <!-- <CvSection /> -->
     <ContactSection />
   </div>
 </template>

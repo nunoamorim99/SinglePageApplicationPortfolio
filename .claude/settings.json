@@ -14,7 +14,8 @@
       "Bash(npx jsrepo@latest add https://vue-bits.dev/r/ProfileCard --yes)"
     ],
     "additionalDirectories": [
-      "c:\\Users\\NunoAmorim\\Desktop\\FocoCriativo\\Portfólio\\Repo-SPAPortfolio\\SinglePageApplicationPortfolio\\src\\assets"
+      "c:\\Users\\NunoAmorim\\Desktop\\FocoCriativo\\Portfólio\\Repo-SPAPortfolio\\SinglePageApplicationPortfolio\\src\\assets",
+      "c:\\Users\\NunoAmorim\\Desktop\\FocoCriativo\\Portfólio\\Repo-SPAPortfolio\\SinglePageApplicationPortfolio\\src\\i18n\\locales"
     ]
   }
 }

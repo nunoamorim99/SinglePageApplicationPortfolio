@@ -13,15 +13,16 @@ const sections = [
 </script>
 
 <template>
-  <div class="pt-24 pb-20">
+  <div class="pt-28 pb-24">
     <div class="section-container">
-      <div class="mx-auto max-w-3xl text-center">
+      <div class="max-w-3xl mb-16">
         <h1 class="section-title">{{ t('personal.title') }}</h1>
-        <p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
+        <p class="mt-4 text-lg leading-relaxed text-charcoal-400 dark:text-charcoal-300">
           {{ t('personal.intro') }}
         </p>
+        <div class="accent-line mt-6" />
       </div>
-      <div class="mt-16 grid gap-8 sm:grid-cols-2">
+      <div class="grid gap-6 sm:grid-cols-2">
         <HobbyCard
           v-for="section in sections"
           :key="section.id"

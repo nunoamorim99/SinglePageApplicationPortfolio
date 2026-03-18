@@ -12,51 +12,48 @@ const sportIcons = {
 </script>
 
 <template>
-  <div class="pt-24 pb-20">
+  <div class="pt-28 pb-24">
     <div class="section-container">
-      <router-link
-        to="/personal"
-        class="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 transition-colors hover:text-primary-600"
-      >
+      <router-link to="/personal" class="back-link">
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
         </svg>
         {{ t('personal.backToPersonal') }}
       </router-link>
 
-      <div class="text-center">
+      <div class="mb-16">
         <h1 class="section-title">{{ t('sports.title') }}</h1>
         <p class="section-subtitle">{{ t('sports.subtitle') }}</p>
+        <div class="accent-line mt-6" />
       </div>
 
-      <div class="mt-16 grid gap-8 sm:grid-cols-2">
+      <div class="grid gap-8 sm:grid-cols-2">
         <div v-for="sport in sports" :key="sport.id" class="card">
-          <div class="flex items-center gap-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-50 text-primary-600 dark:bg-primary-900/30">
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" v-html="sportIcons[sport.icon] || sportIcons.running" />
-            </div>
-            <h3 class="font-display text-xl font-semibold text-gray-900 dark:text-white">{{ t(`sports.items.${sport.id}.name`) }}</h3>
+          <div class="flex items-center gap-4 mb-4">
+            <svg class="h-6 w-6 text-vermillion flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" v-html="sportIcons[sport.icon] || sportIcons.running" />
+            <h3 class="font-serif text-2xl text-charcoal dark:text-cream-100">{{ t(`sports.items.${sport.id}.name`) }}</h3>
           </div>
-          <p class="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400">{{ t(`sports.items.${sport.id}.description`) }}</p>
-          <div class="mt-4">
+          <p class="text-sm leading-relaxed text-charcoal-400 dark:text-charcoal-300">{{ t(`sports.items.${sport.id}.description`) }}</p>
+          <div class="mt-6">
             <PhotoGallery :images="sport.photos" :columns="2" />
           </div>
         </div>
       </div>
 
-      <div class="mt-20">
-        <h2 class="text-center font-display text-2xl font-bold text-gray-900 dark:text-white">{{ t('sports.achievementsTitle') }}</h2>
-        <div class="mx-auto mt-10 max-w-2xl">
-          <div class="relative border-l-2 border-primary-100 pl-8 dark:border-primary-800">
+      <div class="mt-24">
+        <h2 class="font-serif text-display-sm text-charcoal dark:text-cream-100 text-center">{{ t('sports.achievementsTitle') }}</h2>
+        <div class="accent-line mt-6 mx-auto" />
+        <div class="mx-auto mt-12 max-w-2xl">
+          <div class="relative border-l-2 border-vermillion/30 pl-8">
             <div
               v-for="achievement in achievements"
               :key="achievement.id"
-              class="relative mb-10 last:mb-0"
+              class="relative mb-12 last:mb-0"
             >
-              <div class="absolute -left-[calc(2rem+5px)] top-1 h-3 w-3 rounded-full border-2 border-primary-500 bg-white dark:bg-neutral-950" />
-              <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">{{ achievement.year }}</span>
-              <h3 class="mt-1 font-display text-lg font-semibold text-gray-900 dark:text-white">{{ t(`sports.achievements.${achievement.id}.title`) }}</h3>
-              <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">{{ t(`sports.achievements.${achievement.id}.description`) }}</p>
+              <div class="absolute -left-[calc(2rem+5px)] top-1.5 h-2.5 w-2.5 bg-vermillion" />
+              <span class="text-xs font-bold uppercase tracking-[0.2em] text-vermillion">{{ achievement.year }}</span>
+              <h3 class="mt-2 font-serif text-xl text-charcoal dark:text-cream-100">{{ t(`sports.achievements.${achievement.id}.title`) }}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-charcoal-400 dark:text-charcoal-300">{{ t(`sports.achievements.${achievement.id}.description`) }}</p>
             </div>
           </div>
         </div>

@@ -7,13 +7,14 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="pt-24 pb-20">
+  <div class="pt-28 pb-24">
     <div class="section-container">
-      <div class="text-center">
+      <div class="mb-16">
         <h1 class="section-title">{{ t('projects.title') }}</h1>
         <p class="section-subtitle">{{ t('projects.subtitle') }}</p>
+        <div class="accent-line mt-6" />
       </div>
-      <div class="mt-16 space-y-12">
+      <div class="space-y-16">
         <ProjectCard
           v-for="(project, index) in projects"
           :key="project.id"

@@ -11,14 +11,15 @@ const handleContact = () => {
 </script>
 
 <template>
-  <section id="contact" class="py-20 bg-teal-100 dark:bg-neutral-900/50">
+  <section id="contact" class="py-24 lg:py-32 bg-cream-200 dark:bg-charcoal-800">
     <div class="section-container">
-      <div class="text-center">
+      <div class="text-center mb-16">
         <h2 class="section-title">{{ t('contact.title') }}</h2>
-        <p class="section-subtitle">{{ t('contact.subtitle') }}</p>
+        <p class="section-subtitle mx-auto">{{ t('contact.subtitle') }}</p>
+        <div class="accent-line mt-6 mx-auto" />
       </div>
 
-      <div class="mx-auto mt-12 flex justify-center">
+      <div class="flex justify-center">
         <ProfileCard
           :avatar-url="profile.photo"
           :mini-avatar-url="profile.photo"

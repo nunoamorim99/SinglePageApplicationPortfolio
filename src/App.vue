@@ -8,7 +8,10 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="flex min-h-screen flex-col">
+  <div class="flex min-h-screen flex-col relative">
+    <!-- Grain texture overlay -->
+    <div class="grain-overlay" aria-hidden="true" />
+
     <Navbar />
     <main class="flex-1">
       <router-view v-slot="{ Component }">

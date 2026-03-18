@@ -13,23 +13,26 @@ const iconMap = {
 </script>
 
 <template>
-  <section id="interests" class="bg-gray-50/50 py-20 dark:bg-neutral-900/50">
+  <section id="interests" class="py-24 lg:py-32 bg-charcoal text-cream-100 dark:bg-charcoal-800">
     <div class="section-container">
-      <div class="text-center">
-        <h2 class="section-title">{{ t('interests.title') }}</h2>
-        <p class="section-subtitle">{{ t('interests.subtitle') }}</p>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-16">
+        <div>
+          <h2 class="font-serif text-display-md text-cream-100">{{ t('interests.title') }}</h2>
+          <p class="mt-3 text-charcoal-300 max-w-xl">{{ t('interests.subtitle') }}</p>
+        </div>
+        <div class="accent-line flex-shrink-0" />
       </div>
-      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+      <div class="grid gap-px sm:grid-cols-2 lg:grid-cols-4 border border-charcoal-600">
         <div
-          v-for="id in profile.interestIds"
+          v-for="(id, index) in profile.interestIds"
           :key="id"
-          class="card group text-center"
+          class="group p-8 border-charcoal-600 transition-colors duration-300 hover:bg-vermillion/10"
+          :class="index < profile.interestIds.length - 1 ? 'border-b lg:border-b-0 lg:border-r' : ''"
         >
-          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/30">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" v-html="iconMap[id]" />
-          </div>
-          <h3 class="mt-4 font-display text-lg font-semibold text-gray-900 dark:text-white">{{ t(`interests.items.${id}.title`) }}</h3>
-          <p class="mt-2 text-sm leading-relaxed text-gray-500 dark:text-gray-400">{{ t(`interests.items.${id}.description`) }}</p>
+          <svg class="h-8 w-8 text-vermillion mb-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" v-html="iconMap[id]" />
+          <h3 class="font-serif text-xl text-cream-100">{{ t(`interests.items.${id}.title`) }}</h3>
+          <p class="mt-3 text-sm leading-relaxed text-charcoal-300">{{ t(`interests.items.${id}.description`) }}</p>
         </div>
       </div>
     </div>
