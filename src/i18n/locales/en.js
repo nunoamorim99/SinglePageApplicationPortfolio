@@ -211,7 +211,7 @@ export default {
       'pc-ibm-product-owner': {
         title: 'Professional Certificate: IBM Product Owner',
         provider: 'Coursera — IBM',
-        skills: [''],
+        skills: ['The Product Owner Profession: Unleashing the Power of SCRUM', 'Introduction to Agile Development and SCRUM', 'Information Technology (IT) Fundamentals for Everyone', 'Product Owner: Communication & Stakeholder Management', 'Product Owner: Essential Skilld and Tools for Innovation', 'Practice Exam for Scrum.org PSPO I Certification'],
       },
       'pc-po-1': {
         title: 'The Product Owner Profession: Unleashing the Power of SCRUM',
@@ -246,7 +246,7 @@ export default {
       'pc-microsoft-ux-design': {
         title: 'Professional Certificate: Microsoft UX Design',
         provider: 'Coursera — Microsoft',
-        skills: [''],
+        skills: ['Fundamentals of UI/UX Design', 'Design for User Experience', 'User Interface Design and Prototyping', 'UX Design in Practice: Acessibility and Collaboration'],
       },
       'pc-microsoft-ux-design-1': {
         title: 'Fundamentals of UI/UX Design',
