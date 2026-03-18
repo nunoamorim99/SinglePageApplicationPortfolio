@@ -151,14 +151,14 @@ export default {
     toolsLabel: 'Ferramentas & Tecnologias',
     items: {
       'mobile-app': {
-        title: 'HealthTrack — App de Bem-Estar',
-        role: 'Gestor de Produto',
-        description: 'Liderei o desenvolvimento completo de uma aplicação móvel de bem-estar desenhada para ajudar utilizadores a monitorizar hábitos diários, definir objetivos de saúde e receber recomendações personalizadas. Geri uma equipa multidisciplinar de 6 pessoas, defini o roadmap do produto e coordenei com stakeholders para alinhar objetivos de negócio com necessidades dos utilizadores. A app alcançou 4,6 estrelas e 15 mil downloads no primeiro trimestre.',
+        title: 'Movize',
+        role: 'Gestor de Produto/Product Owner',
+        description: 'Movize é uma aplicação mobile que tem como intuito centralizar toda a informação de transportes públicos. O objetivo era desenvolver uma aplicação capaz de ajudar os utilizadores de transportes públicos, a aceder a toda a informação que precisam para se deslocarem por todo o país e permitindo a ligação entre vários transportes públicos e operadores. Fui responsável pelo desenvolvimento e evolução do Movize, gerindo o backlog do produto e garantindo o alinhamento entre os objetivos comerciais, as necessidades dos utilizadores e a implementação técnica. A minha função envolveu definir os requisitos do produto, priorizar funcionalidades e traduzir os objetivos estratégicos em histórias de utilizador claras para a equipa de desenvolvimento. Trabalhei em estreita colaboração com designers, programadores e partes interessadas para garantir que o produto proporcionasse valor, mantendo sempre um forte foco na experiência do utilizador e na qualidade do produto. Através da gestão do backlog, do planeamento de sprints e de ciclos contínuos de feedback, ajudei a orientar o roteiro do produto e assegurei que a equipa entregasse funcionalidades significativas e impactantes para o Movize.',
       },
       'web-app': {
-        title: 'InsightBoard — Painel de Analytics',
-        role: 'Product Owner',
-        description: 'Responsável pela visão e backlog de um painel de analytics web que agrega dados de múltiplas ferramentas de negócio numa única vista acionável. Realizei pesquisa extensiva com mais de 30 stakeholders, defini user stories e priorizei funcionalidades usando scoring RICE. Entreguei o MVP em 8 semanas, reduzindo o tempo de geração de relatórios em 60% para a equipa de operações.',
+        title: 'Movize Connect',
+        role: 'Gestor de Produto/Product Owner',
+        description: 'O Movize Connect é uma plataforma web desenvolvida para gerir a informação disponível na aplicação móvel Movize. A plataforma foi concebida para utilizadores responsáveis pela gestão de informações sobre transportes públicos, garantindo que os passageiros se mantêm sempre atualizados. Além disso, era também utilizada pelos administradores do Movize para gerir toda a plataforma e a aplicação móvel. Esta plataforma foi construída utilizando módulos para garantir escalabilidade e fácil adaptabilidade a cada perfil de utilizador. Fui responsável pelo desenvolvimento e evolução do Movize, gerindo o backlog do produto e garantindo o alinhamento entre os objetivos de negócio, as necessidades dos utilizadores e a implementação técnica. A minha função envolveu definir os requisitos do produto, priorizar funcionalidades e traduzir objetivos estratégicos em histórias de utilizador claras para a equipa de desenvolvimento. Trabalhei em estreita colaboração com designers, programadores e partes interessadas para garantir que o produto proporcionasse valor, mantendo sempre um forte foco na experiência do utilizador e na qualidade do produto. Através da gestão do backlog, do planeamento de sprints e de ciclos contínuos de feedback, ajudei a orientar o roteiro do produto e assegurei que a equipa entregasse funcionalidades significativas e impactantes para o Movize.',
       },
     },
   },

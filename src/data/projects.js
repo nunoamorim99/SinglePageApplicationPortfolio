@@ -1,21 +1,47 @@
 export const projects = [
   {
     id: 'mobile-app',
-    tools: ['React Native', 'Firebase', 'Figma', 'Jira', 'Mixpanel'],
+    tools: ['React Native', 'Firebase', 'PostgreSQL', 'Figma', 'Jira', 'Confluence', 'Github', 'Agile', 'Scrum'],
     images: [
-      'https://picsum.photos/seed/health1/800/500',
-      'https://picsum.photos/seed/health2/800/500',
-      'https://picsum.photos/seed/health3/800/500',
+      'src/assets/projects/movize/m-banner.png',
+      'src/assets/projects/movize/m-logo.png',
+      'src/assets/projects/movize/m-1.JPG',
     ],
   },
   {
-    id: 'web-app',
-    tools: ['Vue.js', 'D3.js', 'Python', 'PostgreSQL', 'Tailwind CSS'],
+    id: 'web-platform',
+    tools: ['Vue.js', 'Vite', 'Python', 'PostgreSQL', 'Docker', 'Tailwind CSS', 'Figma', 'Jira', 'Confluence', 'Github', 'Agile', 'Scrum'],
     images: [
-      'https://picsum.photos/seed/insight1/800/500',
-      'https://picsum.photos/seed/insight2/800/500',
-      'https://picsum.photos/seed/insight3/800/500',
-      'https://picsum.photos/seed/insight4/800/500',
+      'src/assets/projects/movize/m-banner.png',
+      'src/assets/projects/movizeConnect/mc-1.JPG',
+      'src/assets/projects/movizeConnect/mc-2.JPG',
+    ],
+  },
+  {
+    id: 'events-module',
+    tools: ['Vue.js', 'Vite', 'Python', 'PostgreSQL', 'Docker', 'Tailwind CSS', 'Figma', 'Jira', 'Confluence', 'Github', 'Agile', 'Scrum'],
+    images: [
+      'src/assets/projects/movize/m-banner.png',
+      'src/assets/projects/movizeConnect/eventsModule/mc-events-1.png',
+      'src/assets/projects/movizeConnect/eventsModule/mc-events-2.png',
+    ],
+  },
+  {
+    id: 'gtfs-management-module',
+    tools: ['Vue.js', 'Vite', 'Python', 'PostgreSQL', 'Docker', 'Tailwind CSS', 'Figma', 'Jira', 'Confluence', 'Github', 'Agile', 'Scrum'],
+    images: [
+      'src/assets/projects/movize/m-banner.png',
+      'src/assets/projects/movizeConnect/mc-1.JPG',
+      'src/assets/projects/movizeConnect/mc-2.JPG',
+    ],
+  },
+  {
+    id: 'furniture-sensors-module',
+    tools: ['Vue.js', 'Vite', 'Python', 'PostgreSQL', 'Docker', 'Tailwind CSS', 'Figma', 'Jira', 'Confluence', 'Github', 'Agile', 'Scrum'],
+    images: [
+      'src/assets/projects/movize/m-banner.png',
+      'src/assets/projects/movizeConnect/mc-1.JPG',
+      'src/assets/projects/movizeConnect/mc-2.JPG',
     ],
   },
 ]
