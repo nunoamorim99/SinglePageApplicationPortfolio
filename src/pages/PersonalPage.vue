@@ -7,37 +7,37 @@ const { t } = useI18n();
 const sections = [
   {
     id: "travel",
-    image: "https://picsum.photos/seed/travel-card/800/500",
+    image: "src/assets/travels/travels-0.png",
     to: "/personal/travel",
   },
   {
     id: "sports",
-    image: "https://picsum.photos/seed/sports-card/800/500",
+    image: "src/assets/sports/sports-0.png",
     to: "/personal/sports",
   },
   {
     id: "photography",
-    image: "https://picsum.photos/seed/photo-card/800/500",
+    image: "src/assets/photos/photo-0.png",
     to: "/personal/photography",
   },
   {
     id: "gamming",
-    image: "https://picsum.photos/seed/gamming-card/800/500",
+    image: "src/assets/gamming/gamming-0.png",
     to: "/personal/gamming",
   },
   {
     id: "reading",
-    image: "https://picsum.photos/seed/reading-card/800/500",
+    image: "src/assets/books/book-0.png",
     to: "/personal/reading",
   },
   {
     id: "lego",
-    image: "https://picsum.photos/seed/lego-card/800/500",
+    image: "src/assets/lego/lego-0.png",
     to: "/personal/lego",
   },
   {
     id: "puzzle",
-    image: "https://picsum.photos/seed/puzzle-card/800/500",
+    image: "src/assets/puzzles/puzzles-0.png",
     to: "/personal/puzzle",
   },
 ];

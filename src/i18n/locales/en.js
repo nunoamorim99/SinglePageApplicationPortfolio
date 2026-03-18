@@ -333,7 +333,7 @@ export default {
       },
       sports: {
         title: 'Sports',
-        description: 'Staying active through running, cycling, and outdoor adventures.',
+        description: 'Staying active through football and gym training.',
       },
       photography: {
         title: 'Photography',
@@ -479,31 +479,37 @@ export default {
     subtitle: 'Staying active, setting goals, pushing limits',
     achievementsTitle: 'Achievements & Milestones',
     items: {
-      running: {
-        name: 'Running',
-        description: "Long-distance running keeps me grounded and focused. There's nothing quite like the clarity that comes after a morning run.",
+      football: {
+        name: 'Football',
+        description: 'Football has been part of my life since childhood. The teamwork, strategy, and competitive spirit on the pitch keep me motivated both on and off the field.',
       },
-      cycling: {
-        name: 'Cycling',
-        description: 'Exploring new routes on two wheels — from city commutes to weekend countryside rides.',
+      gym: {
+        name: 'Gym',
+        description: 'Consistent gym training helps me stay disciplined and focused. From strength training to functional workouts, it\'s my daily reset.',
       },
     },
+    categories: {
+      juniors: 'Juniors',
+      seniors: 'Seniors',
+    },
     achievements: {
-      halfMarathon: {
-        title: 'First Half Marathon',
-        description: 'Completed my first 21.1 km race with a time of 1h 52min.',
+      districtChampion: {
+        title: 'District 1st Division Champion',
       },
-      cycling1000: {
-        title: '1000 km Cycling Milestone',
-        description: 'Reached 1000 km of accumulated cycling distance in a single year.',
+      proNationalChampion: {
+        title: 'AF Braga Pro National Champion',
       },
-      '10kPb': {
-        title: '10K Personal Best',
-        description: 'Achieved a new personal record of 46 minutes in a 10K race.',
+      nationalPromotion: {
+        title: 'Promotion to the National Championship',
       },
-      centuryRide: {
-        title: 'First Century Ride',
-        description: 'Completed my first 100 km cycling ride through the Minho region.',
+      superCup: {
+        title: 'AF Braga Super Cup Winner',
+      },
+      honorDivisionPromotion: {
+        title: 'Promotion to the AF Braga Honor Division',
+      },
+      firstDivisionChampion: {
+        title: 'AF Braga 1st Division Champion',
       },
     },
   },

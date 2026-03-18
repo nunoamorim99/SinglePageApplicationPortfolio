@@ -90,21 +90,27 @@ function createTextTexture(
   const context = canvas.getContext("2d");
   if (!context) throw new Error("Could not get 2d context");
 
-  context.font = font;
-  const metrics = context.measureText(text);
-  const textWidth = Math.ceil(metrics.width);
+  const lines = text.split("\n");
   const fontSize = getFontSize(font);
-  const textHeight = Math.ceil(fontSize * 1.2);
+  const lineHeight = Math.ceil(fontSize * 1.4);
 
-  canvas.width = textWidth + 20;
-  canvas.height = textHeight + 20;
+  context.font = font;
+  const maxWidth = Math.max(...lines.map((l) => Math.ceil(context.measureText(l).width)));
+  const totalHeight = lineHeight * lines.length;
+
+  canvas.width = maxWidth + 20;
+  canvas.height = totalHeight + 20;
 
   context.font = font;
   context.fillStyle = color;
   context.textBaseline = "middle";
   context.textAlign = "center";
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.fillText(text, canvas.width / 2, canvas.height / 2);
+
+  const startY = (canvas.height - totalHeight) / 2 + lineHeight / 2;
+  lines.forEach((line, i) => {
+    context.fillText(line, canvas.width / 2, startY + i * lineHeight);
+  });
 
   const texture = new Texture(gl, { generateMipmaps: false });
   texture.image = canvas;

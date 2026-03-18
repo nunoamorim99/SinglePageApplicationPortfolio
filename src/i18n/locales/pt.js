@@ -201,7 +201,7 @@ export default {
       },
       sports: {
         title: 'Desporto',
-        description: 'Manter-me ativo através de corrida, ciclismo e aventuras ao ar livre.',
+        description: 'Manter-me ativo através de futebol e treino no ginásio.',
       },
       photography: {
         title: 'Fotografia',
@@ -347,31 +347,37 @@ export default {
     subtitle: 'Manter-me ativo, definir metas, superar limites',
     achievementsTitle: 'Conquistas & Marcos',
     items: {
-      running: {
-        name: 'Corrida',
-        description: 'A corrida de longa distância mantém-me centrado e focado. Nada se compara à clareza que vem depois de uma corrida matinal.',
+      football: {
+        name: 'Futebol',
+        description: 'O futebol faz parte da minha vida desde criança. O trabalho em equipa, a estratégia e o espírito competitivo em campo mantêm-me motivado dentro e fora do terreno de jogo.',
       },
-      cycling: {
-        name: 'Ciclismo',
-        description: 'Explorar novas rotas sobre duas rodas — desde deslocações na cidade até passeios de fim de semana no campo.',
+      gym: {
+        name: 'Ginásio',
+        description: 'O treino consistente no ginásio ajuda-me a manter disciplina e foco. Desde musculação a treinos funcionais, é o meu reset diário.',
       },
     },
+    categories: {
+      juniors: 'Juniores',
+      seniors: 'Seniores',
+    },
     achievements: {
-      halfMarathon: {
-        title: 'Primeira Meia Maratona',
-        description: 'Completei a minha primeira corrida de 21,1 km com um tempo de 1h 52min.',
+      districtChampion: {
+        title: 'Campeão Distrital da 1ª Divisão',
       },
-      cycling1000: {
-        title: 'Marco de 1000 km em Ciclismo',
-        description: 'Atingi 1000 km de distância acumulada em ciclismo num único ano.',
+      proNationalChampion: {
+        title: 'Campeão Pro Nacional da AF Braga',
       },
-      '10kPb': {
-        title: 'Recorde Pessoal nos 10K',
-        description: 'Alcancei um novo recorde pessoal de 46 minutos numa corrida de 10K.',
+      nationalPromotion: {
+        title: 'Promoção ao Campeonato Nacional',
       },
-      centuryRide: {
-        title: 'Primeira Volta de 100 km',
-        description: 'Completei o meu primeiro passeio de 100 km de bicicleta pela região do Minho.',
+      superCup: {
+        title: 'Vencedor da Supertaça da AF Braga',
+      },
+      honorDivisionPromotion: {
+        title: 'Promoção à Divisão de Honra da AF Braga',
+      },
+      firstDivisionChampion: {
+        title: 'Campeão da 1ª Divisão da AF Braga',
       },
     },
   },

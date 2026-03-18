@@ -1,19 +1,40 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 import CircularGallery from "@/components/CircularGallery/CircularGallery.vue";
+import book1 from "@/assets/books/book-1.png";
+import book2 from "@/assets/books/book-2.png";
+import book3 from "@/assets/books/book-3.png";
+import book4 from "@/assets/books/book-4.png";
+import book5 from "@/assets/books/book-5.png";
+import book6 from "@/assets/books/book-6.png";
 
 const { t } = useI18n();
 
 const books = [
   {
-    image: "https://picsum.photos/seed/book-1/800/600",
+    image: book5,
     text: "Hábitos Atómicos",
   },
-  { image: "https://picsum.photos/seed/book-2/800/600", text: "A criada" },
-  { image: "https://picsum.photos/seed/book-3/800/600", text: "" },
-  { image: "https://picsum.photos/seed/book-4/800/600", text: "Book 4" },
-  { image: "https://picsum.photos/seed/book-5/800/600", text: "Book 5" },
-  { image: "https://picsum.photos/seed/book-6/800/600", text: "Book 6" },
+  {
+    image: book1,
+    text: "A criada",
+  },
+  {
+    image: book2,
+    text: "O segredo da criada",
+  },
+  {
+    image: book3,
+    text: "A criada está a ver",
+  },
+  {
+    image: book4,
+    text: "O casamento da criada",
+  },
+  {
+    image: book6,
+    text: "Introdução ao desenvolvimento \n moderno para a web",
+  },
 ];
 </script>
 
