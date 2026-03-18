@@ -93,32 +93,32 @@ export const courses = [
   {
     id: 'pc-meta-fe-1',
     certificateImage: 'src/assets/courses/pc-meta-fe-1.png',
-    certificateUrl: '',
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/2DOWCUYD7FWI',
   },
   {
     id: 'pc-meta-fe-2',
     certificateImage: 'src/assets/courses/pc-meta-fe-2.png',
-    certificateUrl: '',
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/AWHRK9UKGJ7E',
   },
   {
     id: 'pc-meta-fe-3',
     certificateImage: 'src/assets/courses/pc-meta-fe-3.png',
-    certificateUrl: '',
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/5GTMUZYUZEHH',
   },
   {
     id: 'pc-meta-fe-4',
     certificateImage: 'src/assets/courses/pc-meta-fe-4.png',
-    certificateUrl: '',
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/DGK9JXGH9DNH',
   },
   {
     id: 'pc-meta-fe-5',
     certificateImage: 'src/assets/courses/pc-meta-fe-5.png',
-    certificateUrl: '',
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/K2SELY92ZDZV',
   },
   {
     id: 'johnsHopkins-1',
     certificateImage: 'src/assets/courses/jonhHopkins-1.png',
-    certificateUrl: '',
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/NFYJS3YJGMHD',
   },
   {
     id: 'intro-jira',
