@@ -1,24 +1,57 @@
 <script setup>
-import { useI18n } from 'vue-i18n'
-import HobbyCard from '@/components/personal/HobbyCard.vue'
+import { useI18n } from "vue-i18n";
+import HobbyCard from "@/components/personal/HobbyCard.vue";
 
-const { t } = useI18n()
+const { t } = useI18n();
 
 const sections = [
-  { id: 'travel', image: 'https://picsum.photos/seed/travel-card/800/500', to: '/personal/travel' },
-  { id: 'sports', image: 'https://picsum.photos/seed/sports-card/800/500', to: '/personal/sports' },
-  { id: 'photography', image: 'https://picsum.photos/seed/photo-card/800/500', to: '/personal/photography' },
-  { id: 'hobbies', image: 'https://picsum.photos/seed/hobbies-card/800/500', to: '/personal/hobbies' },
-]
+  {
+    id: "travel",
+    image: "https://picsum.photos/seed/travel-card/800/500",
+    to: "/personal/travel",
+  },
+  {
+    id: "sports",
+    image: "https://picsum.photos/seed/sports-card/800/500",
+    to: "/personal/sports",
+  },
+  {
+    id: "photography",
+    image: "https://picsum.photos/seed/photo-card/800/500",
+    to: "/personal/photography",
+  },
+  {
+    id: "gamming",
+    image: "https://picsum.photos/seed/gamming-card/800/500",
+    to: "/personal/gamming",
+  },
+  {
+    id: "reading",
+    image: "https://picsum.photos/seed/reading-card/800/500",
+    to: "/personal/reading",
+  },
+  {
+    id: "lego",
+    image: "https://picsum.photos/seed/lego-card/800/500",
+    to: "/personal/lego",
+  },
+  {
+    id: "puzzle",
+    image: "https://picsum.photos/seed/puzzle-card/800/500",
+    to: "/personal/puzzle",
+  },
+];
 </script>
 
 <template>
   <div class="pt-28 pb-24">
     <div class="section-container">
       <div class="max-w-3xl mb-16">
-        <h1 class="section-title">{{ t('personal.title') }}</h1>
-        <p class="mt-4 text-lg leading-relaxed text-charcoal-400 dark:text-charcoal-300">
-          {{ t('personal.intro') }}
+        <h1 class="section-title">{{ t("personal.title") }}</h1>
+        <p
+          class="mt-4 text-lg leading-relaxed text-charcoal-400 dark:text-charcoal-300"
+        >
+          {{ t("personal.intro") }}
         </p>
         <div class="accent-line mt-6" />
       </div>

@@ -339,9 +339,21 @@ export default {
         title: 'Photography',
         description: 'Capturing moments and perspectives through the lens.',
       },
-      hobbies: {
-        title: 'Other Hobbies',
-        description: 'Reading, cooking, gaming, and other things that keep life interesting.',
+      gamming: {
+        title: 'Gaming',
+        description: 'Playing video games for hours on end.',
+      },
+      reading: {
+        title: 'Reading',
+        description: 'From product management books to science fiction — reading broadens perspective and fuels creativity.',
+      },
+      lego: {
+        title: 'Lego',
+        description: 'Building intricate Lego sets piece by piece — a creative and relaxing way to unwind.',
+      },
+      puzzle: {
+        title: 'Puzzles',
+        description: 'Assembling puzzles that challenge patience and attention to detail.',
       },
     },
   },
@@ -350,30 +362,115 @@ export default {
     subtitle: "Places I've been lucky enough to explore",
     visitedCities: 'Visited Cities',
     cities: {
+      meillerie: {
+        city: 'Meillerie',
+        country: 'France',
+        description: 'A peaceful village on the shores of Lake Geneva, nestled between the Alps and the water with stunning mountain views.',
+      },
+      aachen: {
+        city: 'Aachen',
+        country: 'Germany',
+        description: 'A charming city at the crossroads of three countries, known for its magnificent cathedral and rich Carolingian history.',
+      },
+      cologne: {
+        city: 'Cologne',
+        country: 'Germany',
+        description: 'Dominated by its iconic Gothic cathedral, Cologne blends history with a vibrant cultural scene along the Rhine.',
+      },
+      'marina-dor': {
+        city: "Marina d'Or",
+        country: 'Spain',
+        description: 'A sunny resort destination on the Spanish Mediterranean coast, perfect for relaxation and warm beach days.',
+      },
+      rome: {
+        city: 'Rome',
+        country: 'Italy',
+        description: 'The Eternal City — from the Colosseum to the Trevi Fountain, every street is a walk through thousands of years of history.',
+      },
       venice: {
         city: 'Venice',
         country: 'Italy',
         description: "Explored the winding canals, visited St. Mark's Basilica, and got lost in the most beautiful way possible.",
       },
-      barcelona: {
-        city: 'Barcelona',
-        country: 'Spain',
-        description: "Amazed by Gaudí's architecture, the energy of La Rambla, and the Mediterranean coastline.",
+      milan: {
+        city: 'Milan',
+        country: 'Italy',
+        description: "Italy's fashion and design capital — the Duomo, the Galleria, and a city that perfectly balances tradition and innovation.",
       },
-      paris: {
-        city: 'Paris',
-        country: 'France',
-        description: 'The city of lights lived up to its name — from the Louvre to Montmartre, every corner tells a story.',
+      como: {
+        city: 'Como',
+        country: 'Italy',
+        description: 'Nestled at the southern tip of Lake Como, a picturesque lakeside town surrounded by stunning Alpine scenery.',
       },
-      london: {
-        city: 'London',
-        country: 'United Kingdom',
-        description: 'A perfect blend of history and modernity — from the Tower Bridge to the vibrant markets of Camden.',
+      varenna: {
+        city: 'Varenna',
+        country: 'Italy',
+        description: 'A hidden gem on the eastern shore of Lake Como — colorful houses, peaceful gardens, and breathtaking lake views.',
+      },
+      pisa: {
+        city: 'Pisa',
+        country: 'Italy',
+        description: 'Beyond the famous Leaning Tower, a beautiful Tuscan city with charming riverside walks and historic architecture.',
+      },
+      luxembourg: {
+        city: 'Luxembourg',
+        country: 'Luxembourg',
+        description: 'A small but impressive capital — dramatic gorges, ancient fortifications, and a unique blend of French and German culture.',
+      },
+      maastricht: {
+        city: 'Maastricht',
+        country: 'Netherlands',
+        description: 'One of the oldest cities in the Netherlands — cobblestone streets, cozy cafés, and a distinctly southern European feel.',
+      },
+      vatican: {
+        city: 'Vatican City',
+        country: 'Vatican City',
+        description: "The heart of the Catholic world — the awe-inspiring St. Peter's Basilica, the Sistine Chapel, and centuries of art and faith.",
+      },
+      eindhoven: {
+        city: 'Eindhoven',
+        country: 'Netherlands',
+        description: 'A hub of technology and design — known for its innovative spirit, modern architecture, and creative energy.',
+      },
+      antwerp: {
+        city: 'Antwerp',
+        country: 'Belgium',
+        description: 'A city of diamonds, fashion, and Baroque art — with a stunning central station and a vibrant cultural scene.',
+      },
+      brussels: {
+        city: 'Brussels',
+        country: 'Belgium',
+        description: 'The heart of Europe — from the Grand Place to the quirky Manneken Pis, a city rich in history, chocolate, and character.',
       },
       lisbon: {
         city: 'Lisbon',
         country: 'Portugal',
         description: "My home country's capital never disappoints — the trams, the pastel de nata, the views from Alfama.",
+      },
+      porto: {
+        city: 'Porto',
+        country: 'Portugal',
+        description: 'A city of stunning river views, historic port wine cellars, and colorful tiled facades along the Douro.',
+      },
+      'monte-gordo': {
+        city: 'Monte Gordo',
+        country: 'Portugal',
+        description: 'A laid-back Algarve beach town with golden sand, warm waters, and spectacular sunsets over the coast.',
+      },
+      portimao: {
+        city: 'Portimão',
+        country: 'Portugal',
+        description: 'A vibrant Algarve city known for its dramatic cliffs, beautiful Praia da Rocha, and delicious grilled sardines.',
+      },
+      'viana-do-castelo': {
+        city: 'Viana do Castelo',
+        country: 'Portugal',
+        description: 'A charming northern Portuguese city where the Lima river meets the Atlantic — rich in traditions, stunning views from Santa Luzia.',
+      },
+      bern: {
+        city: 'Bern',
+        country: 'Switzerland',
+        description: 'The Swiss capital with its well-preserved medieval old town, the iconic Zytglogge clock tower, and stunning views of the Bernese Alps.',
       },
     },
   },
@@ -429,6 +526,22 @@ export default {
       8: 'Night city reflections on water',
       9: 'Green valley panorama',
     },
+  },
+  gamming: {
+    title: 'Gaming',
+    subtitle: 'Playing video games for hours on end',
+  },
+  reading: {
+    title: 'Reading',
+    subtitle: 'Books that shaped my thinking and broadened my perspective',
+  },
+  lego: {
+    title: 'Lego',
+    subtitle: 'Builds that brought ideas to life, one brick at a time',
+  },
+  puzzle: {
+    title: 'Puzzles',
+    subtitle: 'Piece by piece, patience always pays off',
   },
   hobbies: {
     title: 'Other Hobbies',

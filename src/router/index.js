@@ -8,6 +8,10 @@ const TravelPage = () => import('@/pages/TravelPage.vue')
 const SportsPage = () => import('@/pages/SportsPage.vue')
 const PhotographyPage = () => import('@/pages/PhotographyPage.vue')
 const HobbiesPage = () => import('@/pages/HobbiesPage.vue')
+const GammingPage = () => import('@/pages/GammingPage.vue')
+const ReadingPage = () => import('@/pages/ReadingPage.vue')
+const LegoPage = () => import('@/pages/LegoPage.vue')
+const PuzzlePage = () => import('@/pages/PuzzlePage.vue')
 
 const routes = [
   {
@@ -49,6 +53,26 @@ const routes = [
     path: '/personal/hobbies',
     name: 'hobbies',
     component: HobbiesPage,
+  },
+  {
+    path: '/personal/gamming',
+    name: 'gamming',
+    component: GammingPage,
+  },
+  {
+    path: '/personal/reading',
+    name: 'reading',
+    component: ReadingPage,
+  },
+  {
+    path: '/personal/lego',
+    name: 'lego',
+    component: LegoPage,
+  },
+  {
+    path: '/personal/puzzle',
+    name: 'puzzle',
+    component: PuzzlePage,
   },
   {
     path: '/:pathMatch(.*)*',

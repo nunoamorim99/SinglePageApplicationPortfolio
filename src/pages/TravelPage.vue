@@ -82,7 +82,7 @@ function closePanel() {
             </div>
             <div class="p-5">
               <h3 class="font-serif text-xl text-charcoal dark:text-cream-100">{{ selectedCity.city }}</h3>
-              <p class="mt-1 text-xs font-bold uppercase tracking-widest text-charcoal-300">{{ selectedCity.country }} / {{ selectedCity.year }}</p>
+              <p class="mt-1 text-xs font-bold uppercase tracking-widest text-charcoal-300">{{ selectedCity.country }}</p>
               <p class="mt-3 text-sm leading-relaxed text-charcoal-400 dark:text-charcoal-300">{{ selectedCity.description }}</p>
               <div v-if="selectedCity.photos.length > 1" class="mt-4 grid grid-cols-3 gap-1">
                 <img
@@ -111,7 +111,7 @@ function closePanel() {
             <img :src="city.photos[0]" :alt="city.city" class="h-16 w-16 flex-shrink-0 object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" />
             <div>
               <h3 class="font-serif text-lg text-charcoal group-hover:text-vermillion transition-colors dark:text-cream-100">{{ city.city }}</h3>
-              <p class="text-xs font-bold uppercase tracking-widest text-charcoal-300 dark:text-charcoal-400">{{ city.country }} / {{ city.year }}</p>
+              <p class="text-xs font-bold uppercase tracking-widest text-charcoal-300 dark:text-charcoal-400">{{ city.country }}</p>
             </div>
           </button>
         </div>

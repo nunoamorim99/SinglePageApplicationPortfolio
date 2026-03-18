@@ -207,9 +207,21 @@ export default {
         title: 'Fotografia',
         description: 'Capturar momentos e perspetivas através da lente.',
       },
-      hobbies: {
-        title: 'Outros Hobbies',
-        description: 'Leitura, cozinha, gaming e outras coisas que tornam a vida interessante.',
+      gamming: {
+        title: 'Gaming',
+        description: 'Jogar videojogos durante horas a fio.',
+      },
+      reading: {
+        title: 'Leitura',
+        description: 'Desde livros de gestão de produto a ficção científica — a leitura amplia perspetivas e alimenta a criatividade.',
+      },
+      lego: {
+        title: 'Lego',
+        description: 'Construir sets de Lego peça a peça — uma forma criativa e relaxante de descontrair.',
+      },
+      puzzle: {
+        title: 'Puzzles',
+        description: 'Montar puzzles que desafiam a paciência e a atenção ao detalhe.',
       },
     },
   },
@@ -218,30 +230,115 @@ export default {
     subtitle: 'Lugares que tive a sorte de explorar',
     visitedCities: 'Cidades Visitadas',
     cities: {
+      meillerie: {
+        city: 'Meillerie',
+        country: 'França',
+        description: 'Uma pacata aldeia nas margens do Lago Genebra, aninhada entre os Alpes e a água com vistas deslumbrantes das montanhas.',
+      },
+      aachen: {
+        city: 'Aachen',
+        country: 'Alemanha',
+        description: 'Uma cidade encantadora na encruzilhada de três países, conhecida pela sua magnífica catedral e rica história carolíngia.',
+      },
+      cologne: {
+        city: 'Colónia',
+        country: 'Alemanha',
+        description: 'Dominada pela sua icónica catedral gótica, Colónia combina história com uma vibrante cena cultural ao longo do Reno.',
+      },
+      'marina-dor': {
+        city: "Marina d'Or",
+        country: 'Espanha',
+        description: 'Um destino de resort solarengo na costa mediterrânica espanhola, perfeito para relaxar e desfrutar de dias quentes de praia.',
+      },
+      rome: {
+        city: 'Roma',
+        country: 'Itália',
+        description: 'A Cidade Eterna — do Coliseu à Fontana di Trevi, cada rua é um passeio por milhares de anos de história.',
+      },
       venice: {
         city: 'Veneza',
         country: 'Itália',
         description: 'Explorei os canais sinuosos, visitei a Basílica de São Marcos e perdi-me da forma mais bonita possível.',
       },
-      barcelona: {
-        city: 'Barcelona',
-        country: 'Espanha',
-        description: 'Deslumbrado pela arquitetura de Gaudí, a energia da La Rambla e a costa mediterrânica.',
+      milan: {
+        city: 'Milão',
+        country: 'Itália',
+        description: 'A capital da moda e do design de Itália — o Duomo, a Galleria, e uma cidade que equilibra perfeitamente tradição e inovação.',
       },
-      paris: {
-        city: 'Paris',
-        country: 'França',
-        description: 'A cidade das luzes fez jus ao seu nome — do Louvre a Montmartre, cada canto conta uma história.',
+      como: {
+        city: 'Como',
+        country: 'Itália',
+        description: 'Aninhada na ponta sul do Lago Como, uma pitoresca cidade lacustre rodeada por deslumbrante cenário alpino.',
       },
-      london: {
-        city: 'Londres',
-        country: 'Reino Unido',
-        description: 'Uma mistura perfeita de história e modernidade — da Tower Bridge aos vibrantes mercados de Camden.',
+      varenna: {
+        city: 'Varenna',
+        country: 'Itália',
+        description: 'Uma joia escondida na margem oriental do Lago Como — casas coloridas, jardins tranquilos e vistas de cortar a respiração.',
+      },
+      pisa: {
+        city: 'Pisa',
+        country: 'Itália',
+        description: 'Para além da famosa Torre Inclinada, uma bela cidade toscana com passeios encantadores à beira-rio e arquitetura histórica.',
+      },
+      luxembourg: {
+        city: 'Luxemburgo',
+        country: 'Luxemburgo',
+        description: 'Uma capital pequena mas impressionante — desfiladeiros dramáticos, fortificações antigas e uma mistura única de cultura francesa e alemã.',
+      },
+      maastricht: {
+        city: 'Maastricht',
+        country: 'Países Baixos',
+        description: 'Uma das cidades mais antigas dos Países Baixos — ruas de calçada, cafés acolhedores e um ambiente distintamente sul-europeu.',
+      },
+      vatican: {
+        city: 'Cidade do Vaticano',
+        country: 'Cidade do Vaticano',
+        description: 'O coração do mundo católico — a impressionante Basílica de São Pedro, a Capela Sistina e séculos de arte e fé.',
+      },
+      eindhoven: {
+        city: 'Eindhoven',
+        country: 'Países Baixos',
+        description: 'Um polo de tecnologia e design — conhecida pelo seu espírito inovador, arquitetura moderna e energia criativa.',
+      },
+      antwerp: {
+        city: 'Antuérpia',
+        country: 'Bélgica',
+        description: 'Uma cidade de diamantes, moda e arte barroca — com uma estação central deslumbrante e uma vibrante cena cultural.',
+      },
+      brussels: {
+        city: 'Bruxelas',
+        country: 'Bélgica',
+        description: 'O coração da Europa — da Grand Place ao peculiar Manneken Pis, uma cidade rica em história, chocolate e carácter.',
       },
       lisbon: {
         city: 'Lisboa',
         country: 'Portugal',
         description: 'A capital do meu país nunca desilude — os elétricos, os pastéis de nata, as vistas de Alfama.',
+      },
+      porto: {
+        city: 'Porto',
+        country: 'Portugal',
+        description: 'Uma cidade de vistas deslumbrantes sobre o rio, históricas caves de vinho do Porto e fachadas coloridas de azulejos ao longo do Douro.',
+      },
+      'monte-gordo': {
+        city: 'Monte Gordo',
+        country: 'Portugal',
+        description: 'Uma tranquila vila de praia no Algarve com areia dourada, águas quentes e pores do sol espetaculares sobre a costa.',
+      },
+      portimao: {
+        city: 'Portimão',
+        country: 'Portugal',
+        description: 'Uma vibrante cidade algarvia conhecida pelas suas falésias dramáticas, a bela Praia da Rocha e deliciosas sardinhas grelhadas.',
+      },
+      'viana-do-castelo': {
+        city: 'Viana do Castelo',
+        country: 'Portugal',
+        description: 'Uma encantadora cidade do norte de Portugal onde o rio Lima encontra o Atlântico — rica em tradições, com vistas deslumbrantes de Santa Luzia.',
+      },
+      bern: {
+        city: 'Berna',
+        country: 'Suíça',
+        description: 'A capital suíça com o seu centro histórico medieval bem preservado, a icónica torre do relógio Zytglogge e vistas deslumbrantes dos Alpes Berneses.',
       },
     },
   },
@@ -297,6 +394,22 @@ export default {
       8: 'Reflexos noturnos da cidade na água',
       9: 'Panorama de vale verde',
     },
+  },
+  gamming: {
+    title: 'Gaming',
+    subtitle: 'Jogar videojogos durante horas a fio',
+  },
+  reading: {
+    title: 'Leitura',
+    subtitle: 'Livros que moldaram o meu pensamento e alargaram a minha perspetiva',
+  },
+  lego: {
+    title: 'Lego',
+    subtitle: 'Construções que deram vida a ideias, tijolo a tijolo',
+  },
+  puzzle: {
+    title: 'Puzzles',
+    subtitle: 'Peça a peça, a paciência compensa sempre',
   },
   hobbies: {
     title: 'Outros Hobbies',
