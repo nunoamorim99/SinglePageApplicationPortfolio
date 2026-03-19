@@ -12,8 +12,8 @@ import ContactSection from '@/components/home/ContactSection.vue'
   <div>
     <HeroSection />
     <AboutSection />
-    <InterestsSection />
     <EducationSection />
+    <InterestsSection />
     <ExperienceSection />
     <SkillsSection />
     <ContactSection />

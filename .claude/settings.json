@@ -13,7 +13,8 @@
       "Bash(npx jsrepo@latest add https://vue-bits.dev/r/GlassSurface --yes)",
       "Bash(npx jsrepo@latest add https://vue-bits.dev/r/ProfileCard --yes)",
       "Bash(npx jsrepo@latest add https://vue-bits.dev/r/DomeGallery)",
-      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/CircularGallery)"
+      "Bash(npx jsrepo@latest add https://vue-bits.dev/r/CircularGallery)",
+      "Read(//c/Users/NUNOAM~1/AppData/Local/Temp/claude/c--Users-NunoAmorim-Desktop-FocoCriativo-Portf-lio-Repo-SPAPortfolio-SinglePageApplicationPortfolio/tasks/**)"
     ],
     "additionalDirectories": [
       "c:\\Users\\NunoAmorim\\Desktop\\FocoCriativo\\Portfólio\\Repo-SPAPortfolio\\SinglePageApplicationPortfolio\\src\\assets",

@@ -4,7 +4,15 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
   }
 
   body {
@@ -109,6 +117,28 @@
 .page-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+/* Scroll animation utilities */
+.scroll-word {
+  display: inline;
+  will-change: opacity;
+  margin-right: 0.25em;
+}
+
+/* Scroll indicator line animation */
+@keyframes scrollLine {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(400%); }
+}
+
+.animate-scroll-line {
+  animation: scrollLine 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Pin spacer z-index control — keep below navbar */
+.pin-spacer {
+  z-index: 1 !important;
 }
 
 /* Leaflet overrides */

@@ -1,24 +1,82 @@
 <script setup>
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { profile } from '@/data/profile'
 import { useUiStore } from '@/stores/ui'
-import { computed } from 'vue'
 import Ballpit from '@/components/Ballpit/Ballpit.vue'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const { t } = useI18n()
 const ui = useUiStore()
+
+const sectionRef = ref(null)
+const contentRef = ref(null)
+const bgRef = ref(null)
+const scrollHintRef = ref(null)
+let ctx
 
 const ballpitColors = computed(() =>
   ui.isDark
     ? [0xff4d00, 0xe04400, 0x8b9e7c]
     : [0xff4d00, 0xff7733, 0x8b9e7c]
 )
+
+onMounted(() => {
+  ctx = gsap.context(() => {
+    // Hero content fades out + parallax as user scrolls past
+    gsap.to(contentRef.value, {
+      scrollTrigger: {
+        trigger: sectionRef.value,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+      y: -120,
+      opacity: 0,
+      scale: 0.95,
+      ease: 'none',
+    })
+
+    // Ballpit background moves slower (parallax depth effect)
+    gsap.to(bgRef.value, {
+      scrollTrigger: {
+        trigger: sectionRef.value,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+      y: 200,
+      scale: 1.1,
+      ease: 'none',
+    })
+
+    // Scroll hint fades out quickly on first scroll
+    gsap.to(scrollHintRef.value, {
+      scrollTrigger: {
+        trigger: sectionRef.value,
+        start: 'top top',
+        end: '10% top',
+        scrub: true,
+      },
+      opacity: 0,
+      y: -20,
+      ease: 'none',
+    })
+  }, sectionRef.value)
+})
+
+onUnmounted(() => {
+  ctx?.revert()
+})
 </script>
 
 <template>
-  <section class="relative min-h-screen flex items-center overflow-hidden bg-cream-50 dark:bg-charcoal-900">
+  <section ref="sectionRef" class="relative min-h-screen flex items-center overflow-hidden bg-cream-50 dark:bg-charcoal-900">
     <!-- Ballpit animated background -->
-    <div class="absolute inset-0 z-0" aria-hidden="true">
+    <div ref="bgRef" class="absolute inset-0 z-0 will-change-transform" aria-hidden="true">
       <Ballpit
         :count="60"
         :colors="ballpitColors"
@@ -37,7 +95,7 @@ const ballpitColors = computed(() =>
       />
     </div>
 
-    <div class="section-container relative z-10 py-32">
+    <div ref="contentRef" class="section-container relative z-10 py-32 will-change-transform">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         <!-- Text content: asymmetric, editorial -->
         <div class="lg:col-span-7 xl:col-span-8">
@@ -80,6 +138,14 @@ const ballpitColors = computed(() =>
             <div class="absolute -bottom-3 -right-3 w-24 h-24 border-2 border-vermillion" aria-hidden="true" />
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div ref="scrollHintRef" class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-fade-in" style="animation-delay: 1.2s">
+      <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-charcoal-300 dark:text-charcoal-500">Scroll</span>
+      <div class="h-12 w-px bg-charcoal-100 dark:bg-charcoal-700 relative overflow-hidden">
+        <div class="absolute inset-x-0 top-0 h-3 bg-vermillion animate-scroll-line" />
       </div>
     </div>
   </section>

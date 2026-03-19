@@ -1,24 +1,23 @@
 export const topSkills = [
   { id: 'productStrategy', rating: 5 },
-  { id: 'agileScrum', rating: 4 },
-  { id: 'dataAnalysis', rating: 4 },
-  { id: 'stakeholderManagement', rating: 5 },
-  { id: 'userResearch', rating: 4 },
+  { id: 'agileScrum', rating: 5 },
+  { id: 'uxResearch', rating: 4 },
+  { id: 'wireframingPrototyping', rating: 5 },
+  { id: 'frontendDevelopment', rating: 4 },
+  { id: 'stakeholderCommunication', rating: 4 },
+  { id: 'aiTools', rating: 4 },
 ]
 
 export const otherSkillIds = [
-  'roadmapPlanning',
-  'abTesting',
-  'sql',
-  'jiraConfluence',
-  'figma',
-  'wireframing',
-  'marketAnalysis',
-  'okrsKpis',
-  'apiDesign',
-  'businessModeling',
-  'presentationDesign',
+  'dataAnalysis',
+  'informationSystems',
   'crossFunctionalLeadership',
+  'featurePrioritisation',
+  'marketResearch',
+  'productDocumentation',
+  'okrsKpis',
+  'sprintPlanning',
+  'competitiveAnalysis',
 ]
 
 export const languages = [

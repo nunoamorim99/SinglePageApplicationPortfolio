@@ -17,27 +17,33 @@ function openGallery(index) {
 </script>
 
 <template>
-  <article class="border border-charcoal-100 bg-white overflow-hidden transition-all duration-300 hover:border-charcoal-300 dark:border-charcoal-700 dark:bg-charcoal-800 dark:hover:border-charcoal-500">
-    <div class="flex flex-col lg:flex-row" :class="reversed ? 'lg:flex-row-reverse' : ''">
-      <div class="relative lg:w-1/2">
-        <div class="grid grid-cols-2 gap-px bg-charcoal-100 dark:bg-charcoal-700">
+  <article class="project-card border border-charcoal-100 bg-white overflow-hidden transition-all duration-300 hover:border-charcoal-300 dark:border-charcoal-700 dark:bg-charcoal-800 dark:hover:border-charcoal-500">
+    <div class="flex flex-col lg:min-h-[400px]" :class="reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'">
+      <!-- Image Gallery -->
+      <div class="lg:w-1/2">
+        <div
+          class="grid grid-cols-2 gap-px bg-charcoal-100 dark:bg-charcoal-700 lg:h-full"
+          style="grid-auto-rows: 1fr"
+        >
           <button
             v-for="(img, i) in project.images.slice(0, 4)"
             :key="i"
-            class="group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-vermillion"
-            :class="project.images.length === 1 ? 'col-span-2' : (i === 0 && project.images.length === 3 ? 'col-span-2' : '')"
+            class="group relative overflow-hidden bg-white dark:bg-charcoal-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-vermillion"
+            :class="project.images.length === 1 ? 'col-span-2 row-span-2' : (i === 0 && project.images.length === 3 ? 'col-span-2' : '')"
             @click="openGallery(i)"
           >
             <img
               :src="img"
               :alt="`${t(`projects.items.${project.id}.title`)} ${i + 1}`"
-              class="aspect-video w-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0 grayscale"
+              class="aspect-video w-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0 grayscale lg:aspect-auto lg:h-full"
               loading="lazy"
             />
             <div class="absolute inset-0 bg-vermillion/0 transition-colors group-hover:bg-vermillion/10" />
           </button>
         </div>
       </div>
+
+      <!-- Content -->
       <div class="flex flex-1 flex-col justify-center p-8 lg:p-12">
         <div class="badge mb-5 self-start">{{ t(`projects.items.${project.id}.role`) }}</div>
         <h3 class="font-serif text-display-sm text-charcoal dark:text-cream-100">{{ t(`projects.items.${project.id}.title`) }}</h3>
