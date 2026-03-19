@@ -1,133 +1,160 @@
+import pcPm1 from '@/assets/courses/pc-pm-1.png'
+import pcPm2 from '@/assets/courses/pc-pm-2.png'
+import pcPm3 from '@/assets/courses/pc-pm-3.png'
+import pcPm4 from '@/assets/courses/pc-pm-4.png'
+import pcPm5 from '@/assets/courses/pc-pm-5.png'
+import pcPm6 from '@/assets/courses/pc-pm-6.png'
+import pcIbmProductOwner from '@/assets/courses/pc-IBMProductOwner.png'
+import pcPo1 from '@/assets/courses/pc-po-1.png'
+import pcPo2 from '@/assets/courses/pc-po-2.png'
+import pcPo3 from '@/assets/courses/pc-po-3.png'
+import pcPo4 from '@/assets/courses/pc-po-4.png'
+import pcPo5 from '@/assets/courses/pc-po-5.png'
+import pcPo6 from '@/assets/courses/pc-po-6.png'
+import pcMicrosoftUxDesign from '@/assets/courses/pc-microsoft-ux-design.png'
+import pcMicrosoftUxDesign1 from '@/assets/courses/pc-microsoft-ux-design-1.png'
+import pcMicrosoftUxDesign2 from '@/assets/courses/pc-microsoft-ux-design-2.png'
+import pcMicrosoftUxDesign3 from '@/assets/courses/pc-microsoft-ux-design-3.png'
+import pcMicrosoftUxDesign4 from '@/assets/courses/pc-microsoft-ux-design-4.png'
+import pcMetaFe1 from '@/assets/courses/pc-meta-fe-1.png'
+import pcMetaFe2 from '@/assets/courses/pc-meta-fe-2.png'
+import pcMetaFe3 from '@/assets/courses/pc-meta-fe-3.png'
+import pcMetaFe4 from '@/assets/courses/pc-meta-fe-4.png'
+import pcMetaFe5 from '@/assets/courses/pc-meta-fe-5.png'
+import jonhHopkins1 from '@/assets/courses/jonhHopkins-1.png'
+import introJira from '@/assets/courses/intro-jira.png'
+import maasAdoptionUse from '@/assets/courses/maas-adoption-use.png'
+
 export const courses = [
   {
     id: 'pc-pm-1',
-    certificateImage: 'src/assets/courses/pc-pm-1.png',
+    certificateImage: pcPm1,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/records/DJKEPLAEDREL',
 
   },
   {
     id: 'pc-pm-2',
-    certificateImage: 'src/assets/courses/pc-pm-2.png',
+    certificateImage: pcPm2,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/records/YL3H2BLTDZXP',
   },
   {
     id: 'pc-pm-3',
-    certificateImage: 'src/assets/courses/pc-pm-3.png',
+    certificateImage: pcPm3,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/records/PWMCSVMQD1IU',
   },
   {
     id: 'pc-pm-4',
-    certificateImage: 'src/assets/courses/pc-pm-4.png',
+    certificateImage: pcPm4,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/records/11V8OBHAPLV0',
   },
   {
     id: 'pc-pm-5',
-    certificateImage: 'src/assets/courses/pc-pm-5.png',
+    certificateImage: pcPm5,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/records/C7AO2V23HH2O',
   },
   {
     id: 'pc-pm-6',
-    certificateImage: 'src/assets/courses/pc-pm-6.png',
+    certificateImage: pcPm6,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/records/M0TIXOK4ZQJ5',
   },
   {
     id: 'pc-ibm-product-owner',
-    certificateImage: 'src/assets/courses/pc-IBMProductOwner.png',
+    certificateImage: pcIbmProductOwner,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/professional-cert/1VZE2U1KRG7S',
   },
   {
     id: 'pc-po-1',
-    certificateImage: 'src/assets/courses/pc-po-1.png',
+    certificateImage: pcPo1,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/7LC6G5V3FWM3',
   },
   {
     id: 'pc-po-2',
-    certificateImage: 'src/assets/courses/pc-po-2.png',
+    certificateImage: pcPo2,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/KAZ3V3B38HZH',
   },
   {
     id: 'pc-po-3',
-    certificateImage: 'src/assets/courses/pc-po-3.png',
+    certificateImage: pcPo3,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/67995ZXQN37N',
   },
   {
     id: 'pc-po-4',
-    certificateImage: 'src/assets/courses/pc-po-4.png',
+    certificateImage: pcPo4,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/BESP826P6AV8',
   },
   {
     id: 'pc-po-5',
-    certificateImage: 'src/assets/courses/pc-po-5.png',
+    certificateImage: pcPo5,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/V7LGY3SN0ERB',
   },
   {
     id: 'pc-po-6',
-    certificateImage: 'src/assets/courses/pc-po-6.png',
+    certificateImage: pcPo6,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/YKKURCD40JCQ',
   },
   {
     id: 'pc-microsoft-ux-design',
-    certificateImage: 'src/assets/courses/pc-microsoft-ux-design.png',
+    certificateImage: pcMicrosoftUxDesign,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/7LC6G5V3FWM3',
   },
   {
     id: 'pc-microsoft-ux-design-1',
-    certificateImage: 'src/assets/courses/pc-microsoft-ux-design-1.png',
+    certificateImage: pcMicrosoftUxDesign1,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/KAZ3V3B38HZH',
   },
   {
     id: 'pc-microsoft-ux-design-2',
-    certificateImage: 'src/assets/courses/pc-microsoft-ux-design-2.png',
+    certificateImage: pcMicrosoftUxDesign2,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/67995ZXQN37N',
   },
   {
     id: 'pc-microsoft-ux-design-3',
-    certificateImage: 'src/assets/courses/pc-microsoft-ux-design-3.png',
+    certificateImage: pcMicrosoftUxDesign3,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/BESP826P6AV8',
   },
   {
     id: 'pc-microsoft-ux-design-4',
-    certificateImage: 'src/assets/courses/pc-microsoft-ux-design-4.png',
+    certificateImage: pcMicrosoftUxDesign4,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/certificate/V7LGY3SN0ERB',
   },
   {
     id: 'pc-meta-fe-1',
-    certificateImage: 'src/assets/courses/pc-meta-fe-1.png',
+    certificateImage: pcMetaFe1,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/2DOWCUYD7FWI',
   },
   {
     id: 'pc-meta-fe-2',
-    certificateImage: 'src/assets/courses/pc-meta-fe-2.png',
+    certificateImage: pcMetaFe2,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/AWHRK9UKGJ7E',
   },
   {
     id: 'pc-meta-fe-3',
-    certificateImage: 'src/assets/courses/pc-meta-fe-3.png',
+    certificateImage: pcMetaFe3,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/5GTMUZYUZEHH',
   },
   {
     id: 'pc-meta-fe-4',
-    certificateImage: 'src/assets/courses/pc-meta-fe-4.png',
+    certificateImage: pcMetaFe4,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/DGK9JXGH9DNH',
   },
   {
     id: 'pc-meta-fe-5',
-    certificateImage: 'src/assets/courses/pc-meta-fe-5.png',
+    certificateImage: pcMetaFe5,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/K2SELY92ZDZV',
   },
   {
     id: 'johnsHopkins-1',
-    certificateImage: 'src/assets/courses/jonhHopkins-1.png',
+    certificateImage: jonhHopkins1,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/NFYJS3YJGMHD',
   },
   {
     id: 'intro-jira',
-    certificateImage: 'src/assets/courses/intro-jira.png',
+    certificateImage: introJira,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/records/KANX51FI84RE',
   },
   {
     id: 'maas-adoption-use',
-    certificateImage: 'src/assets/courses/maas-adoption-use.png',
+    certificateImage: maasAdoptionUse,
     certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/DB8BGM5XES6U',
   },
 ]

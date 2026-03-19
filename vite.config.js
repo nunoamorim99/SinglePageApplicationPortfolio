@@ -4,6 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   base: '/SinglePageApplicationPortfolio/',
+  assetsInclude: ['**/*.JPG'],
   plugins: [vue()],
   resolve: {
     alias: {

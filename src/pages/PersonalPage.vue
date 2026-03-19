@@ -2,42 +2,50 @@
 import { useI18n } from "vue-i18n";
 import HobbyCard from "@/components/personal/HobbyCard.vue";
 
+import travelsImg from "@/assets/travels/travels-0.png";
+import sportsImg from "@/assets/sports/sports-0.png";
+import photosImg from "@/assets/photos/photo-0.png";
+import gammingImg from "@/assets/gamming/gamming-0.png";
+import booksImg from "@/assets/books/book-0.png";
+import legoImg from "@/assets/lego/lego-0.png";
+import puzzlesImg from "@/assets/puzzles/puzzles-0.png";
+
 const { t } = useI18n();
 
 const sections = [
   {
     id: "travel",
-    image: "src/assets/travels/travels-0.png",
+    image: travelsImg,
     to: "/personal/travel",
   },
   {
     id: "sports",
-    image: "src/assets/sports/sports-0.png",
+    image: sportsImg,
     to: "/personal/sports",
   },
   {
     id: "photography",
-    image: "src/assets/photos/photo-0.png",
+    image: photosImg,
     to: "/personal/photography",
   },
   {
     id: "gamming",
-    image: "src/assets/gamming/gamming-0.png",
+    image: gammingImg,
     to: "/personal/gamming",
   },
   {
     id: "reading",
-    image: "src/assets/books/book-0.png",
+    image: booksImg,
     to: "/personal/reading",
   },
   {
     id: "lego",
-    image: "src/assets/lego/lego-0.png",
+    image: legoImg,
     to: "/personal/lego",
   },
   {
     id: "puzzle",
-    image: "src/assets/puzzles/puzzles-0.png",
+    image: puzzlesImg,
     to: "/personal/puzzle",
   },
 ];

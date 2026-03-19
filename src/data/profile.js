@@ -1,6 +1,8 @@
+import photo from "@/assets/profilePhoto/profilephoto.jpg";
+
 export const profile = {
   name: "Nuno Amorim",
-  photo: "src/assets/profilePhoto/profilephoto.jpg",
+  photo,
   location: "Portugal",
   email: "nunomamorim99@gmail.com",
   linkedin: "https://linkedin.com/in/nunoamorim99",
